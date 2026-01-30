@@ -1,0 +1,146 @@
+import { Callout } from '../../components/Callout'
+import { Card, Text, Stack, Badge, Group } from '@mantine/core'
+
+# Standards Unpacking Prompts
+
+Prompts for breaking down curriculum standards into teachable components, generating aligned objectives, and creating mapping documents.
+
+<Callout type="info" title="Before You Start">
+Have your specific standard text ready to paste. The more precise your standard language, the better the output.
+</Callout>
+
+---
+
+## 1. Unpack a Standard into Knowledge and Skills
+
+Use this when you need to identify exactly what students must know and be able to do for a given standard.
+
+<Card shadow="sm" padding="lg" radius="md" withBorder my="md">
+<Badge color="blue" mb="sm">Copy and Fill In</Badge>
+
+```
+I need to unpack the following curriculum standard into its component parts.
+
+Standard: [paste the full text of the standard]
+Subject: [subject area]
+Grade Level: [grade level]
+
+Please identify:
+1. The discrete knowledge components (facts, concepts, vocabulary) students must learn
+2. The skills students must demonstrate
+3. The cognitive demand level (recall, application, analysis, synthesis)
+4. Any prerequisite knowledge or skills implied but not stated
+5. Key academic vocabulary within the standard
+
+Format the output as a structured table with columns for Component, Type (Knowledge/Skill), and Cognitive Level.
+```
+</Card>
+
+---
+
+## 2. Generate Learning Objectives from Standards
+
+Use this to turn a standard into specific, measurable learning objectives you can use in lesson plans.
+
+<Card shadow="sm" padding="lg" radius="md" withBorder my="md">
+<Badge color="blue" mb="sm">Copy and Fill In</Badge>
+
+```
+Generate specific, measurable learning objectives from the following standard.
+
+Standard: [paste the full text of the standard]
+Subject: [subject area]
+Grade Level: [grade level]
+Number of objectives needed: [3-6 recommended]
+
+Requirements for each objective:
+- Begin with a measurable verb (avoid "understand" or "learn")
+- Include a clear condition (given what?)
+- Include a performance criterion (how well?)
+- Be specific enough to assess in a single lesson or activity
+
+Format each objective as: "Students will be able to [verb] [what] [condition] [criterion]."
+```
+</Card>
+
+---
+
+## 3. Align Objectives to Bloom's Taxonomy Levels
+
+Use this when you want to ensure your objectives span a range of cognitive complexity.
+
+<Card shadow="sm" padding="lg" radius="md" withBorder my="md">
+<Badge color="blue" mb="sm">Copy and Fill In</Badge>
+
+```
+I have the following learning objectives for a [subject] unit at the [grade level] level. Please align each one to a Bloom's Taxonomy level and suggest revisions to improve coverage across levels.
+
+Objectives:
+[paste your list of objectives, one per line]
+
+For each objective:
+1. Identify the current Bloom's level (Remember, Understand, Apply, Analyze, Evaluate, Create)
+2. Explain why it maps to that level
+3. If the set is missing a level, suggest a new or revised objective to fill the gap
+
+Also provide a summary showing the distribution of objectives across all six Bloom's levels.
+```
+</Card>
+
+---
+
+## 4. Cross-Reference Objectives Across Multiple Standards
+
+Use this when planning a unit that addresses several standards and you need to see where objectives overlap or connect.
+
+<Card shadow="sm" padding="lg" radius="md" withBorder my="md">
+<Badge color="blue" mb="sm">Copy and Fill In</Badge>
+
+```
+I am planning a [subject] unit for [grade level] that must address multiple standards. Please cross-reference these standards and identify overlapping and complementary objectives.
+
+Standards:
+1. [paste standard 1]
+2. [paste standard 2]
+3. [paste standard 3]
+[add more as needed]
+
+For each standard, list the key objectives. Then create a cross-reference matrix showing:
+- Which objectives are shared across standards
+- Which objectives are unique to a single standard
+- Suggested combined objectives that address multiple standards simultaneously
+- A recommended teaching sequence that builds logically from foundational to complex objectives
+```
+</Card>
+
+---
+
+## 5. Create a Standards-to-Objectives Mapping Document
+
+Use this to produce a complete alignment document for a unit or course, suitable for curriculum documentation.
+
+<Card shadow="sm" padding="lg" radius="md" withBorder my="md">
+<Badge color="blue" mb="sm">Copy and Fill In</Badge>
+
+```
+Create a comprehensive standards-to-objectives mapping document for the following unit.
+
+Unit Title: [unit title]
+Subject: [subject area]
+Grade Level: [grade level]
+Unit Duration: [number of weeks or lessons]
+
+Standards Addressed:
+[paste all relevant standards with their codes]
+
+For each standard, generate:
+1. 2-4 measurable learning objectives
+2. Suggested assessment type for each objective (formative or summative)
+3. The Bloom's Taxonomy level of each objective
+4. The lesson or week where the objective is primarily taught
+
+Format the output as a table with columns: Standard Code | Objective | Assessment Type | Bloom's Level | Lesson/Week.
+
+End with a summary noting any standards that may need additional coverage or objectives that serve double duty.
+```
+</Card>

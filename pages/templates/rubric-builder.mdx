@@ -1,0 +1,136 @@
+import { TemplateCard } from '../../components/TemplateCard'
+import { Callout } from '../../components/Callout'
+import { Table, Card, Text, Stack } from '@mantine/core'
+
+# Rubric Builder Template
+
+<TemplateCard
+  title="Rubric Builder Template"
+  description="A step-by-step guide for creating clear, criteria-based rubrics with defined performance levels and descriptors aligned to your learning objectives."
+  badge="Assessment Tool"
+  downloadHref="/templates/rubric-builder-template.pdf"
+>
+  <Text size="sm" c="dimmed">Estimated completion time: 30-45 minutes with AI assistance</Text>
+</TemplateCard>
+
+## What's Included
+
+This template walks you through building a rubric from scratch:
+
+1. **Identify Criteria** — Derive assessment criteria directly from your learning objectives
+2. **Define Performance Levels** — Establish clear levels (e.g., Exceeds, Meets, Approaching, Beginning)
+3. **Write Descriptors** — Create specific, observable descriptions for each level
+4. **Review and Refine** — Check for clarity, consistency, and alignment
+
+## Step 1: Identify Criteria from Objectives
+
+For each learning objective, ask:
+- What does successful performance look like?
+- What are the key components or dimensions of quality?
+- What would distinguish strong work from weak work?
+
+Each criterion should be a single, assessable dimension of the work (e.g., "Use of Evidence," "Organization," "Scientific Accuracy").
+
+## Step 2: Define Performance Levels
+
+Choose a scale that fits your needs:
+
+<Table striped highlightOnHover withTableBorder withColumnBorders my="md">
+  <Table.Thead>
+    <Table.Tr>
+      <Table.Th>Scale</Table.Th>
+      <Table.Th>Levels</Table.Th>
+      <Table.Th>Best For</Table.Th>
+    </Table.Tr>
+  </Table.Thead>
+  <Table.Tbody>
+    <Table.Tr>
+      <Table.Td>4-point</Table.Td>
+      <Table.Td>Exceeds / Meets / Approaching / Beginning</Table.Td>
+      <Table.Td>Most assignments and projects</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>3-point</Table.Td>
+      <Table.Td>Proficient / Developing / Emerging</Table.Td>
+      <Table.Td>Formative assessments, quick checks</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Single-point</Table.Td>
+      <Table.Td>Criteria with space for feedback above and below</Table.Td>
+      <Table.Td>Feedback-focused assessments</Table.Td>
+    </Table.Tr>
+  </Table.Tbody>
+</Table>
+
+## Step 3: Write Descriptors
+
+Each cell in the rubric should describe specific, observable qualities. Avoid vague language like "good" or "needs improvement."
+
+**Strong descriptor example:**
+> "Cites at least three relevant sources with proper formatting and integrates evidence smoothly into the argument."
+
+**Weak descriptor example:**
+> "Good use of sources."
+
+## Sample Rubric Preview
+
+<Table striped highlightOnHover withTableBorder withColumnBorders my="md">
+  <Table.Thead>
+    <Table.Tr>
+      <Table.Th>Criterion</Table.Th>
+      <Table.Th>Exceeds (4)</Table.Th>
+      <Table.Th>Meets (3)</Table.Th>
+      <Table.Th>Approaching (2)</Table.Th>
+      <Table.Th>Beginning (1)</Table.Th>
+    </Table.Tr>
+  </Table.Thead>
+  <Table.Tbody>
+    <Table.Tr>
+      <Table.Td>Use of Evidence</Table.Td>
+      <Table.Td>Cites 3+ relevant sources; evidence is well-integrated and strongly supports the argument</Table.Td>
+      <Table.Td>Cites 2-3 relevant sources; evidence supports the argument</Table.Td>
+      <Table.Td>Cites 1-2 sources; evidence is present but loosely connected to the argument</Table.Td>
+      <Table.Td>Sources missing or not relevant; evidence does not support the argument</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Organization</Table.Td>
+      <Table.Td>Logical structure with smooth transitions; reader can easily follow the reasoning</Table.Td>
+      <Table.Td>Clear structure with adequate transitions between ideas</Table.Td>
+      <Table.Td>Some organizational structure present but transitions are weak or missing</Table.Td>
+      <Table.Td>No clear organizational structure; ideas are difficult to follow</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Scientific Accuracy</Table.Td>
+      <Table.Td>All scientific concepts are accurate and applied correctly with depth</Table.Td>
+      <Table.Td>Scientific concepts are mostly accurate with minor errors</Table.Td>
+      <Table.Td>Some scientific concepts are inaccurate or applied incorrectly</Table.Td>
+      <Table.Td>Major scientific inaccuracies or concepts are missing</Table.Td>
+    </Table.Tr>
+  </Table.Tbody>
+</Table>
+
+## AI Prompt for Rubric Generation
+
+Use this prompt template to generate a draft rubric with AI:
+
+> I need a rubric for the following assignment: [describe assignment].
+>
+> The learning objectives are:
+> - [Objective 1]
+> - [Objective 2]
+> - [Objective 3]
+>
+> Please create a 4-point rubric with criteria derived from these objectives. For each criterion, write specific, observable descriptors at each performance level (Exceeds, Meets, Approaching, Beginning). Avoid vague language.
+
+## How to Use
+
+1. Start with your learning objectives for the assignment
+2. Identify 3-5 criteria that capture the key dimensions of quality
+3. Choose your performance level scale
+4. Write descriptors for each criterion at each level
+5. Review the rubric for clarity and share with students before the assignment
+6. Use AI to generate a draft, then revise with your professional judgment
+
+<Callout type="info" title="Tip">
+Share rubrics with students before they begin an assignment. When students understand the criteria and performance levels, they can self-assess and aim for higher quality work.
+</Callout>

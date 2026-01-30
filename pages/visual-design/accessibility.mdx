@@ -1,0 +1,209 @@
+import { Callout } from '../../components/Callout'
+
+# Accessibility in Design
+
+Accessible design ensures that all students can engage with your educational materials, regardless of ability, learning difference, or the technology they use. These guidelines help you create materials that work for the widest possible audience.
+
+<Callout type="info" title="Why accessibility matters">
+Approximately 1 in 5 students has a disability that affects how they interact with printed or digital materials. Designing for accessibility from the start is far easier than retrofitting later, and the result is materials that work better for everyone.
+</Callout>
+
+## Text Accessibility
+
+Clear, readable text is the foundation of accessible design.
+
+### Font Selection
+- Use sans-serif fonts (Arial, Calibri, Verdana) for body text -- they are easier to read on screen and in print
+- Avoid decorative or script fonts for any instructional content
+- Use a minimum of 12pt font for body text, 14pt for younger students
+- Headers should be noticeably larger than body text (at least 16pt)
+
+### Contrast
+- Maintain a contrast ratio of at least 4.5:1 between text and background
+- Black text on white or light cream backgrounds provides the strongest readability
+- Avoid light gray text on white backgrounds
+- Never place text over busy images or patterns without a solid background overlay
+
+### Line Spacing and Length
+- Use 1.15 to 1.5 line spacing for body text
+- Keep line lengths between 50 and 75 characters for optimal readability
+- Add extra spacing between paragraphs (at least 1.5 times the line spacing)
+- Left-align body text rather than justifying, which creates uneven word spacing
+
+## Color Accessibility
+
+Color choices affect a significant portion of your students. Roughly 8% of males and 0.5% of females have some form of color vision deficiency.
+
+### Core Principles
+- Never use color alone to convey meaning (e.g., "the items in red are required")
+- Always pair color with another indicator: bold text, an icon, an underline, or a label
+- Use patterns or textures in addition to color in charts and graphs
+- Test your materials in grayscale to verify they still make sense
+
+### Color-Blind Friendly Palettes
+- Avoid red-green combinations, which are the most common problem
+- Use blue and orange as a high-contrast, color-blind safe pairing
+- Consider blue, vermillion, and yellow for three-category designs
+- When highlighting, use blue or bold instead of red or green
+
+### Checking Color Contrast
+Use free tools to verify your color choices:
+- WebAIM Contrast Checker (webaim.org/resources/contrastchecker)
+- Color Oracle (colororacle.org) for simulating color blindness
+- Built-in accessibility checkers in Google Docs and Microsoft Word
+
+## Document Structure
+
+Proper document structure helps all readers navigate your materials and is essential for assistive technology.
+
+### Headings
+- Use built-in heading styles (Heading 1, Heading 2, Heading 3) rather than manually formatting bold, large text
+- Follow a logical heading hierarchy -- never skip levels (e.g., do not jump from Heading 1 to Heading 3)
+- Headings should be descriptive and indicate what the section contains
+- Each page or section should have exactly one top-level heading
+
+### Reading Order
+- Arrange content in a single-column layout when possible
+- If using multi-column layouts, make the reading order clear with numbering or visual flow indicators
+- Avoid text boxes that float outside the main content flow
+- Place instructions before the activity they relate to, not after
+
+### Alt Text for Images
+- Write alternative text for every image that conveys information
+- Describe what the image shows and why it matters in context
+- For decorative images, mark them as decorative so screen readers skip them
+- Keep alt text concise but specific: "Bar chart showing water quality declining from 2019 to 2024" is better than "Chart"
+
+## Print-Friendly Design
+
+Many educational materials are printed and photocopied, sometimes in black and white.
+
+### Paper and Layout
+- Design for standard letter size (8.5 x 11 inches) with at least 1-inch margins
+- Avoid content that bleeds to the edge of the page
+- Leave adequate space for hole-punching on the left margin
+- Ensure content is legible when photocopied in black and white
+
+### Visual Elements
+- Use solid borders and fills rather than subtle gradients that may not photocopy well
+- Avoid watermarks or light background images behind text
+- Ensure any shaded areas use light fills (under 20% gray) so text remains readable
+- Test print a sample page on a standard office printer before distributing
+
+### Student Writing Space
+- Provide lined or boxed areas for student responses
+- Use a minimum line height of 0.4 inches for handwriting space
+- Label response areas clearly with instructions
+
+## Digital Accessibility
+
+If your materials are distributed digitally, additional considerations apply.
+
+### Screen Reader Compatibility
+- Use built-in heading styles and list formatting in your authoring tool
+- Add alt text to all informational images
+- Ensure tables have header rows defined
+- Avoid using images of text -- use actual text instead
+
+### Tagged PDFs
+- When exporting to PDF, use the "tagged PDF" option to preserve document structure
+- Verify the reading order in the PDF using Adobe Acrobat's accessibility checker
+- Ensure form fields are labeled if your PDF includes interactive elements
+- Add document metadata (title, author, language)
+
+### Interactive Documents
+- Ensure all interactive elements are reachable via keyboard navigation
+- Provide clear focus indicators for clickable elements
+- Include text descriptions for any embedded audio or video
+- Offer materials in multiple formats when possible (PDF, Google Doc, Word)
+
+## AI Prompts for Accessibility
+
+Use these prompts to check and improve the accessibility of your materials.
+
+### Accessibility Review Prompt
+
+```
+Review the following educational material for accessibility issues.
+Check for:
+1. Text readability (font size, contrast, line spacing)
+2. Color usage (is color used alone to convey meaning?)
+3. Document structure (are headings properly hierarchical?)
+4. Image descriptions (do images have adequate alt text?)
+5. Print friendliness (will this work in black-and-white?)
+
+Material to review:
+[Paste your content or describe your layout]
+
+Provide specific, actionable recommendations for each issue found.
+```
+
+### Alt Text Generation Prompt
+
+```
+Write concise, descriptive alt text for the following image used
+in a [grade level] [subject] educational material:
+
+Image description: [Describe what the image shows]
+Context: [Explain how the image is used in the lesson]
+
+The alt text should be under 125 characters and convey the key
+information the image communicates to students.
+```
+
+### Accessibility Improvement Prompt
+
+```
+I have an educational document with the following formatting:
+[Describe your current formatting choices]
+
+Suggest specific changes to improve accessibility for students
+with visual impairments, color vision deficiency, and learning
+disabilities. Maintain the professional appearance of the materials
+while making them more inclusive.
+```
+
+## Accessibility Review Checklist
+
+Use this checklist before finalizing any educational material.
+
+### Text and Readability
+- [ ] Body text is at least 12pt (14pt for younger students)
+- [ ] Sans-serif font used for body text
+- [ ] Line spacing is 1.15 or greater
+- [ ] Text-to-background contrast ratio meets 4.5:1 minimum
+- [ ] Text is left-aligned, not fully justified
+
+### Color
+- [ ] No information is conveyed by color alone
+- [ ] Color combinations are color-blind friendly
+- [ ] Materials are understandable in grayscale
+- [ ] Charts and graphs use patterns or labels in addition to color
+
+### Structure
+- [ ] Headings use built-in styles (not manual formatting)
+- [ ] Heading hierarchy is logical and sequential
+- [ ] Reading order is clear and linear
+- [ ] Instructions appear before their associated activities
+
+### Images
+- [ ] All informational images have alt text
+- [ ] Decorative images are marked as decorative
+- [ ] No essential information is conveyed only through images
+- [ ] Images are clear at the size they will be viewed
+
+### Print
+- [ ] Content prints legibly in black and white
+- [ ] Margins accommodate hole-punching
+- [ ] No content bleeds to page edges
+- [ ] Shaded areas remain readable when photocopied
+
+### Digital
+- [ ] Document is saved as a tagged PDF (if applicable)
+- [ ] Tables have defined header rows
+- [ ] Form fields are labeled (if applicable)
+- [ ] Document metadata is complete (title, author, language)
+
+<Callout type="success" title="Start with the checklist">
+You do not need to address every item on this page at once. Start with the accessibility review checklist above and work through it for your next set of materials. Each improvement you make benefits your students, and over time accessible design becomes second nature.
+</Callout>

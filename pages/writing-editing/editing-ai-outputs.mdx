@@ -1,0 +1,296 @@
+import { Tabs, Table, Card, Text, Stack, List, Badge, Group, Accordion, Alert } from '@mantine/core'
+
+# Editing AI Outputs
+
+AI can draft educational content quickly, but every output requires human review and editing. AI-generated text often sounds competent at first glance while containing issues that undermine its usefulness in a classroom setting.
+
+This page provides a structured approach to reviewing, revising, and improving AI-generated curriculum materials.
+
+## Common AI Writing Issues
+
+Before you can fix problems, you need to know what to look for. These are the most frequent issues in AI-generated educational content.
+
+<Accordion variant="separated" my="md">
+  <Accordion.Item value="generic">
+    <Accordion.Control>
+      <Group>
+        <Badge color="red">Generic Language</Badge>
+        <Text size="sm">Vague, one-size-fits-all phrasing</Text>
+      </Group>
+    </Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="xs">
+        <Text>AI tends to produce broad, universally applicable language that lacks the specificity students need. Instructions like "explore the topic" or "think critically about the issues" sound professional but give students nothing concrete to do.</Text>
+        <Text fw={600} mt="xs">What to look for:</Text>
+        <List>
+          <List.Item>Instructions that could apply to any subject or grade level</List.Item>
+          <List.Item>Phrases like "various factors," "multiple perspectives," or "key concepts" without naming them</List.Item>
+          <List.Item>Activities described in abstract terms instead of concrete steps</List.Item>
+        </List>
+        <Text fw={600} mt="xs">Before:</Text>
+        <Text fs="italic">"Students will explore various aspects of the topic and develop a deeper understanding of the key concepts."</Text>
+        <Text fw={600} mt="xs">After:</Text>
+        <Text fs="italic">"Identify three causes of the American Revolution discussed in Chapter 4. For each cause, write one sentence explaining how it increased tension between the colonies and Britain."</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="hallucinations">
+    <Accordion.Control>
+      <Group>
+        <Badge color="red">Hallucinations</Badge>
+        <Text size="sm">Fabricated facts, dates, citations, or statistics</Text>
+      </Group>
+    </Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="xs">
+        <Text>AI models can generate plausible-sounding but false information. This is especially dangerous in educational materials where students trust the content as authoritative.</Text>
+        <Text fw={600} mt="xs">What to look for:</Text>
+        <List>
+          <List.Item>Specific statistics, dates, or data points you did not provide</List.Item>
+          <List.Item>Citations to articles, books, or studies (verify every one)</List.Item>
+          <List.Item>Historical claims or scientific facts stated with confidence</List.Item>
+          <List.Item>Names of organizations, programs, or people you did not mention</List.Item>
+        </List>
+        <Alert variant="light" color="red" title="Verification is not optional" mt="xs">
+          Every factual claim in AI-generated educational content must be verified against a reliable source. Do not assume that a confident-sounding statement is accurate.
+        </Alert>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="tone">
+    <Accordion.Control>
+      <Group>
+        <Badge color="orange">Inconsistent Tone</Badge>
+        <Text size="sm">Shifts between formal and casual, or between audiences</Text>
+      </Group>
+    </Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="xs">
+        <Text>AI may shift tone mid-document, writing some sections in a formal academic voice and others in a casual conversational style. It may also slip between writing for students and writing for teachers within the same document.</Text>
+        <Text fw={600} mt="xs">What to look for:</Text>
+        <List>
+          <List.Item>Sudden shifts from "you" (student-facing) to "students will" (teacher-facing)</List.Item>
+          <List.Item>Sections that sound like a textbook next to sections that sound like a blog post</List.Item>
+          <List.Item>Overly enthusiastic language ("This exciting activity!") mixed with dry instructions</List.Item>
+        </List>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="repetitive">
+    <Accordion.Control>
+      <Group>
+        <Badge color="orange">Repetitive Phrasing</Badge>
+        <Text size="sm">Same sentence structures and transition words reused</Text>
+      </Group>
+    </Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="xs">
+        <Text>AI often falls into patterns, repeating the same sentence structures, transition phrases, or introductory words across a document. This creates a monotonous reading experience and signals to readers that the content was machine-generated.</Text>
+        <Text fw={600} mt="xs">What to look for:</Text>
+        <List>
+          <List.Item>Every paragraph starting with the same structure</List.Item>
+          <List.Item>Overuse of "Additionally," "Furthermore," "Moreover," or "It is important to note that"</List.Item>
+          <List.Item>The same adjectives appearing repeatedly ("comprehensive," "robust," "meaningful")</List.Item>
+          <List.Item>Bullet points that all follow an identical grammatical pattern</List.Item>
+        </List>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="placeholder">
+    <Accordion.Control>
+      <Group>
+        <Badge color="yellow" c="dark">Placeholder Text</Badge>
+        <Text size="sm">Bracketed instructions or unfilled templates</Text>
+      </Group>
+    </Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="xs">
+        <Text>AI frequently leaves placeholder text that is meant to be filled in but can easily be missed during review, especially in longer documents.</Text>
+        <Text fw={600} mt="xs">What to look for:</Text>
+        <List>
+          <List.Item>Bracketed text: [insert topic here], [school name], [teacher name]</List.Item>
+          <List.Item>Generic references: "the chosen text," "the selected data set," "the relevant standard"</List.Item>
+          <List.Item>Incomplete examples that trail off or use ellipses</List.Item>
+          <List.Item>Sections that describe what content should go there instead of providing it</List.Item>
+        </List>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+</Accordion>
+
+## A Structured Review Process
+
+Do not try to catch everything in a single read. Use multiple passes, each focused on a specific dimension.
+
+<Tabs defaultValue="accuracy" my="md">
+  <Tabs.List>
+    <Tabs.Tab value="accuracy">1. Accuracy</Tabs.Tab>
+    <Tabs.Tab value="tone">2. Tone</Tabs.Tab>
+    <Tabs.Tab value="specificity">3. Specificity</Tabs.Tab>
+    <Tabs.Tab value="alignment">4. Alignment</Tabs.Tab>
+  </Tabs.List>
+
+  <Tabs.Panel value="accuracy" pt="md">
+    ### Pass 1: Accuracy Check
+
+    Focus only on whether the content is factually correct.
+
+    - Verify every statistic, date, name, and citation
+    - Confirm that standards references (CCSS, NGSS, etc.) are accurate
+    - Check that described processes or methods are correct
+    - Ensure examples are realistic and factually sound
+    - Look for fabricated sources or references
+
+    **How to verify:** Cross-reference claims against official sources. If you cannot verify a fact, remove it or replace it with one you can confirm.
+  </Tabs.Panel>
+
+  <Tabs.Panel value="tone" pt="md">
+    ### Pass 2: Tone Check
+
+    Focus on whether the voice is consistent and appropriate for the audience.
+
+    - Read the document aloud (or use text-to-speech) to hear tone shifts
+    - Confirm the entire document addresses the same audience
+    - Check for overly formal or overly casual sections
+    - Remove filler enthusiasm ("Great job!" "How exciting!") unless it serves a purpose
+    - Ensure the tone matches your school or program's communication style
+
+    **Quick test:** Could the same person have written every paragraph? If not, revise for consistency.
+  </Tabs.Panel>
+
+  <Tabs.Panel value="specificity" pt="md">
+    ### Pass 3: Specificity Check
+
+    Focus on whether the content is concrete enough to be useful.
+
+    - Replace every generic instruction with a specific one
+    - Fill in all placeholder text with real content
+    - Ensure students know exactly what to do, how much to produce, and in what format
+    - Add context that is specific to your school, community, or subject
+    - Remove vague qualifiers ("various," "several," "some")
+
+    **Quick test:** Could a substitute teacher use these materials without additional explanation? If not, add detail.
+  </Tabs.Panel>
+
+  <Tabs.Panel value="alignment" pt="md">
+    ### Pass 4: Alignment Check
+
+    Focus on whether every piece of content serves the stated learning goals.
+
+    - Confirm each activity connects to a specific learning objective
+    - Check that assessment criteria match what was taught
+    - Verify that the sequence builds logically toward the final goal
+    - Remove content that is interesting but does not serve the objectives
+    - Ensure time allocations are realistic for each activity
+
+    **Quick test:** For every section, can you answer "What learning goal does this serve?" If not, cut it or revise it.
+  </Tabs.Panel>
+</Tabs>
+
+## Giving AI Revision Instructions
+
+When AI output needs improvement, the quality of your revision prompt determines the quality of the result. Be specific about what is wrong and what you want instead.
+
+### Weak vs. Strong Revision Prompts
+
+| Weak Prompt | Strong Prompt |
+|-------------|---------------|
+| Make this better | Rewrite paragraph 2 to use active voice and address students directly using "you" |
+| This is too generic | Replace the three generic examples with examples about [specific topic from our unit] |
+| Fix the tone | The tone shifts in sections 3 and 5. Rewrite them to match the direct, second-person style used in sections 1 and 2 |
+| Make it more specific | The instructions in step 4 are vague. Rewrite to tell students exactly how many sources to find, what to record for each, and what format to use |
+
+### Revision Prompt Templates
+
+**For specificity:**
+```
+The following section is too generic. Rewrite it with these specific details:
+- Subject: [your subject]
+- Grade level: [grade]
+- Specific topic: [topic]
+- Context: [any relevant details about your students or school]
+
+[paste the section]
+```
+
+**For tone correction:**
+```
+Rewrite the following to maintain a consistent [describe tone: direct and student-facing / professional and teacher-facing / warm and parent-friendly] tone throughout.
+Do not use [list phrases to avoid].
+Here is an example of the tone I want: [paste a sentence or paragraph that has the right tone].
+
+[paste the section that needs revision]
+```
+
+**For removing AI patterns:**
+```
+Rewrite the following to sound more natural and varied.
+- Do not start consecutive paragraphs with the same word
+- Vary sentence length (mix short and long)
+- Remove filler transitions like "Additionally," "Furthermore," and "Moreover"
+- Do not use the words "comprehensive," "robust," or "meaningful"
+
+[paste the content]
+```
+
+## Before and After Examples
+
+### Example 1: Student Instructions
+
+<Card withBorder p="md" my="md">
+  <Stack gap="sm">
+    <Group>
+      <Badge color="red" variant="light">Before (AI Output)</Badge>
+    </Group>
+    <Text fs="italic">"In this comprehensive activity, students will explore various aspects of environmental science by examining multiple data sources. They will analyze the information and develop a deeper understanding of the key concepts. Students should think critically about the issues and prepare to share their findings with the class."</Text>
+
+    <Group mt="sm">
+      <Badge color="green" variant="light">After (Edited)</Badge>
+    </Group>
+    <Text fs="italic">"You will investigate water quality in three local streams using data from the county environmental agency. For each stream, record the pH level, dissolved oxygen, and turbidity in the data table on page 8. Then answer the analysis questions comparing the three sites. Be ready to share your two most important findings with the class in a 60-second summary."</Text>
+  </Stack>
+</Card>
+
+### Example 2: Learning Objective
+
+<Card withBorder p="md" my="md">
+  <Stack gap="sm">
+    <Group>
+      <Badge color="red" variant="light">Before (AI Output)</Badge>
+    </Group>
+    <Text fs="italic">"Students will develop a comprehensive understanding of fractions and demonstrate their ability to apply fractional concepts in various real-world scenarios, fostering mathematical thinking and problem-solving skills."</Text>
+
+    <Group mt="sm">
+      <Badge color="green" variant="light">After (Edited)</Badge>
+    </Group>
+    <Text fs="italic">"Students will add and subtract fractions with unlike denominators and solve word problems that require these operations (CCSS.Math 5.NF.A.1, 5.NF.A.2)."</Text>
+  </Stack>
+</Card>
+
+### Example 3: Parent Communication
+
+<Card withBorder p="md" my="md">
+  <Stack gap="sm">
+    <Group>
+      <Badge color="red" variant="light">Before (AI Output)</Badge>
+    </Group>
+    <Text fs="italic">"We are excited to announce that your child will be embarking on an incredible learning journey! This meaningful and robust project will provide comprehensive opportunities for growth and development. Students will engage with various stakeholders and produce multiple deliverables that showcase their learning."</Text>
+
+    <Group mt="sm">
+      <Badge color="green" variant="light">After (Edited)</Badge>
+    </Group>
+    <Text fs="italic">"Starting Monday, your child's class will spend two weeks studying water quality in our community. Students will collect and analyze real data from three local streams, then present their findings to a panel from the county water board on March 14. You can support this work by discussing water use at home or visiting the county water quality dashboard at [URL]."</Text>
+  </Stack>
+</Card>
+
+## Key Takeaways
+
+- AI-generated content always requires human editing. Treat every AI output as a first draft.
+- Use multiple review passes, each focused on one dimension (accuracy, tone, specificity, alignment).
+- When asking AI to revise, be specific about what is wrong and what you want instead.
+- The most common issue is generic language. Replace vague phrasing with concrete details from your actual teaching context.
+- Verify every factual claim. AI confidence is not the same as AI accuracy.

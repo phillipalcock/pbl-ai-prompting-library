@@ -1,0 +1,100 @@
+# Effective Prompting Principles
+
+These six principles are the foundation for writing prompts that produce useful, standards-aligned educational content. They apply to every workflow in this course.
+
+## 1. Be Specific About Context
+
+Every educational prompt should include the context that a skilled colleague would need to do the work. At minimum, specify:
+
+- **Grade level** — "3rd grade" not "elementary"
+- **Subject and topic** — "7th grade life science, cell organelles" not "science"
+- **Standards** — Include the specific standard codes and text when possible
+- **Student population details** — English learners, advanced learners, or specific needs when relevant
+
+**Weak prompt:**
+> Write a lesson about fractions.
+
+**Strong prompt:**
+> Write a lesson for 4th grade math on comparing fractions with unlike denominators, aligned to CCSS 4.NF.A.2. The class includes 6 English learners at WIDA level 3 and 4 students with IEPs requiring extended time.
+
+The strong prompt gives AI enough information to generate something you can actually use. The weak prompt produces generic content that requires extensive revision.
+
+## 2. Structure Prompts With Role, Context, Task, Format, and Constraints
+
+Consistent prompt structure produces consistent output quality. Use these five components:
+
+- **Role** — Tell the AI what expertise to draw on ("You are an experienced 8th grade ELA teacher...")
+- **Context** — Provide the background situation ("We are in week 3 of a unit on argumentative writing...")
+- **Task** — State exactly what you want produced ("Create a formative assessment...")
+- **Format** — Specify the output structure ("Use a table with columns for standard, question, and DOK level...")
+- **Constraints** — Set boundaries ("Limit to 10 questions. All questions must be answerable using only the provided text. Do not exceed DOK level 3.")
+
+You do not need all five components in every prompt, but including more of them produces more targeted results. For complex materials, use all five.
+
+**Example using all five components:**
+> **Role:** You are a curriculum specialist with expertise in backward design and NGSS alignment.
+>
+> **Context:** I am designing a 5th grade science unit on ecosystems. Students have already learned about food chains and will next study human impact on environments.
+>
+> **Task:** Generate a performance task where students analyze data about a local ecosystem and propose an evidence-based conservation plan.
+>
+> **Format:** Include: task description (1 paragraph), student-facing directions (numbered steps), a scoring rubric (4-point scale), and a list of aligned NGSS standards.
+>
+> **Constraints:** The task must be completable in two 45-minute class periods. Reading level should not exceed Lexile 850. All data should be realistic but simplified for 5th graders.
+
+## 3. Iterate On Outputs
+
+Your first prompt rarely produces your final product. Plan for at least two rounds of revision:
+
+1. **Generate** — Run your initial prompt and review the output
+2. **Refine** — Ask for specific changes ("Make question 3 higher DOK level," "Rewrite the rubric in student-friendly language," "Add sentence starters for English learners")
+3. **Polish** — Make final adjustments by hand or with targeted follow-up prompts
+
+Iteration is faster than trying to write the perfect prompt on the first attempt. Treat the first output as a draft, not a deliverable.
+
+**Common iteration moves:**
+- "Increase the rigor of questions 2 and 5"
+- "Rewrite this at a Lexile level of 600"
+- "Add scaffolding for students who struggle with [specific skill]"
+- "Make this more culturally responsive by including contexts relevant to [community]"
+- "Reformat this as a student-facing handout"
+
+## 4. Provide Examples In Prompts
+
+When you need output in a specific style or format, include an example. AI produces significantly better results when it can pattern-match against a concrete model.
+
+**Without example:**
+> Write a driving question for a 6th grade social studies unit on government.
+
+**With example:**
+> Write a driving question for a 6th grade social studies unit on government. Here is an example of the style I want: "Our city is redesigning its public parks — how should we decide what the community actually needs?" The question should be open-ended, connected to a real-world scenario, and accessible to 6th graders.
+
+Providing one or two examples is usually sufficient. If your examples are strong, the AI will match their tone, length, complexity, and structure.
+
+## 5. Avoid Common Prompting Mistakes
+
+These mistakes account for most low-quality AI outputs in curriculum design:
+
+- **Being too vague** — "Make it good" or "Make it rigorous" without defining what that means. Instead, specify: "All questions should be DOK level 3 or higher, requiring students to analyze or evaluate."
+- **Asking for too much at once** — A prompt that requests an entire unit plan with all materials will produce shallow content. Break it into focused requests: standards analysis, then objectives, then assessment, then individual lessons.
+- **Not specifying format** — If you do not tell AI how to structure the output, you will spend time reformatting. Ask for tables, numbered lists, headers, or whatever format you actually need.
+- **Accepting first output without review** — Always read AI output critically. Check for factual accuracy, standards alignment, appropriate difficulty, and cultural sensitivity.
+- **Forgetting to include standards** — Without specific standards, AI generates content that is topically relevant but not necessarily aligned to what students need to learn.
+- **Using jargon without definition** — Terms like "rigorous," "engaging," or "differentiated" mean different things to different educators. Define what you mean or provide examples.
+
+## 6. Design for Equity From the Start
+
+Include equity considerations in your prompts rather than treating them as afterthoughts:
+
+- Specify the linguistic backgrounds of your students
+- Request multiple entry points for different skill levels
+- Ask for culturally responsive contexts and examples
+- Include accessibility requirements (reading level, visual supports, simplified language)
+- Request materials in formats that work for all learners
+
+**Example:**
+> Create a set of 8 discussion questions for a 10th grade English class reading "The House on Mango Street." The class includes students reading at Lexile levels from 700 to 1100. Provide each question at two complexity levels: an access-level version and an extension-level version. Include sentence starters for the access-level questions.
+
+## Applying These Principles
+
+These six principles will surface in every workflow throughout this course. When you encounter a prompt template in later modules, you will see these principles embedded in the structure. When you write your own prompts, use these principles as your checklist.

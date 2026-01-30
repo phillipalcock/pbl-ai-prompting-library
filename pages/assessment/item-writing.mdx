@@ -1,0 +1,257 @@
+import { Callout } from '../../components/Callout'
+import { Table, Card, Text, Stack, Accordion } from '@mantine/core'
+
+# Item & Question Writing
+
+Writing high-quality assessment items is time-intensive work. AI can accelerate the drafting process, but every generated item requires human review for accuracy, alignment, and fairness.
+
+<Callout type="warning" title="Important">
+AI-generated assessment items are drafts, not finished products. Always review for content accuracy, alignment to your specific objectives, grade-level appropriateness, and potential bias before using with students.
+</Callout>
+
+## Question Types
+
+<Accordion variant="separated" my="md">
+  <Accordion.Item value="multiple-choice">
+    <Accordion.Control>Multiple Choice</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="sm">
+        <Text>Multiple choice items consist of a stem (the question or incomplete statement) and options (one correct answer and several distractors). Well-written MC items can assess beyond simple recall when the stem requires analysis or application.</Text>
+        <Text fw={700}>Best practices:</Text>
+        <Text>- Write the stem as a complete question or clearly incomplete statement</Text>
+        <Text>- Make all options plausible and similar in length</Text>
+        <Text>- Avoid "all of the above" and "none of the above"</Text>
+        <Text>- Place the key concept in the stem, not the options</Text>
+        <Text>- Use 4 options (1 correct + 3 distractors)</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+  <Accordion.Item value="short-answer">
+    <Accordion.Control>Short Answer</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="sm">
+        <Text>Short answer items require students to generate a response rather than select one. They are useful for assessing recall, explanation, and simple application. Effective short answer items have a clearly defined correct response or a narrow range of acceptable responses.</Text>
+        <Text fw={700}>Best practices:</Text>
+        <Text>- Be specific about what the response should include</Text>
+        <Text>- Indicate the expected length (one sentence, one paragraph)</Text>
+        <Text>- Write a scoring key that lists acceptable responses</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+  <Accordion.Item value="extended-response">
+    <Accordion.Control>Extended Response</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="sm">
+        <Text>Extended response items require sustained writing — typically multi-paragraph essays or detailed explanations. They assess higher-order thinking: analysis, evaluation, synthesis, and argumentation.</Text>
+        <Text fw={700}>Best practices:</Text>
+        <Text>- Provide clear parameters (length, required elements, format)</Text>
+        <Text>- Include the scoring rubric or criteria with the prompt</Text>
+        <Text>- Specify whether students may use notes or references</Text>
+        <Text>- Write prompts that have more than one defensible response</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+  <Accordion.Item value="performance-tasks">
+    <Accordion.Control>Performance Tasks</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="sm">
+        <Text>Performance tasks ask students to demonstrate learning through a complex, multi-step activity. Students might conduct an investigation, design a solution, or create a product. These tasks assess transfer — the ability to apply learning in new contexts.</Text>
+        <Text fw={700}>Best practices:</Text>
+        <Text>- Ground the task in a realistic scenario</Text>
+        <Text>- Define the audience, purpose, and deliverable</Text>
+        <Text>- Provide clear success criteria before students begin</Text>
+        <Text>- Allow multiple valid approaches to the task</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+</Accordion>
+
+## Writing Effective Stems and Distractors
+
+The quality of an assessment item depends on precise language in both the stem and the options.
+
+<Table striped highlightOnHover withTableBorder withColumnBorders my="md">
+  <Table.Thead>
+    <Table.Tr>
+      <Table.Th>Element</Table.Th>
+      <Table.Th>Weak Example</Table.Th>
+      <Table.Th>Strong Example</Table.Th>
+    </Table.Tr>
+  </Table.Thead>
+  <Table.Tbody>
+    <Table.Tr>
+      <Table.Td><strong>Stem</strong></Table.Td>
+      <Table.Td>Which of the following is true about photosynthesis?</Table.Td>
+      <Table.Td>What is the role of chlorophyll in the light-dependent reactions of photosynthesis?</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Correct answer</strong></Table.Td>
+      <Table.Td>It is important for plants</Table.Td>
+      <Table.Td>It absorbs light energy and transfers it to electrons in the electron transport chain</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Distractor</strong></Table.Td>
+      <Table.Td>It is not important (obviously wrong)</Table.Td>
+      <Table.Td>It splits water molecules to release oxygen (plausible misconception)</Table.Td>
+    </Table.Tr>
+  </Table.Tbody>
+</Table>
+
+Good distractors reflect common student misconceptions. They should be clearly wrong to a student who understands the content, but plausible to a student who does not.
+
+## Aligning Items to Objectives and DOK Levels
+
+Every item should target a specific objective at a defined Depth of Knowledge level.
+
+<Table striped highlightOnHover withTableBorder withColumnBorders my="md">
+  <Table.Thead>
+    <Table.Tr>
+      <Table.Th>DOK Level</Table.Th>
+      <Table.Th>Cognitive Demand</Table.Th>
+      <Table.Th>Item Example</Table.Th>
+    </Table.Tr>
+  </Table.Thead>
+  <Table.Tbody>
+    <Table.Tr>
+      <Table.Td><strong>DOK 1 — Recall</strong></Table.Td>
+      <Table.Td>Remember facts, definitions, terms</Table.Td>
+      <Table.Td>What is the chemical formula for water?</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>DOK 2 — Skill/Concept</strong></Table.Td>
+      <Table.Td>Apply concepts, explain relationships</Table.Td>
+      <Table.Td>Explain how temperature affects the rate of dissolving.</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>DOK 3 — Strategic Thinking</strong></Table.Td>
+      <Table.Td>Analyze, justify, draw conclusions from data</Table.Td>
+      <Table.Td>Given the following data set, determine which variable had the greatest effect on plant growth and justify your answer with evidence.</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>DOK 4 — Extended Thinking</strong></Table.Td>
+      <Table.Td>Synthesize, design, connect across contexts</Table.Td>
+      <Table.Td>Design an experiment to test whether fertilizer runoff affects algae growth in a local waterway. Include your hypothesis, procedure, and expected results.</Table.Td>
+    </Table.Tr>
+  </Table.Tbody>
+</Table>
+
+## AI Prompt Templates
+
+### Generate Multiple Choice Items
+
+```
+Generate 5 multiple choice questions for a [grade level] [subject] assessment.
+
+Objective: [paste specific learning objective]
+DOK Level: [1, 2, 3, or 4]
+
+Requirements for each question:
+- Write a clear, focused stem as a complete question
+- Provide 4 options (A-D) with exactly one correct answer
+- Make all distractors plausible — base them on common student misconceptions
+- Avoid "all of the above" and "none of the above"
+- Keep all options similar in length and grammatical structure
+- Mark the correct answer and briefly explain why each distractor is wrong
+```
+
+### Generate Short Answer Items
+
+```
+Generate 3 short answer questions for a [grade level] [subject] assessment.
+
+Objective: [paste specific learning objective]
+DOK Level: [2 or 3]
+
+For each question:
+- Write a clear prompt that specifies what the student should include
+- Indicate expected response length (1-3 sentences)
+- Provide a model response
+- List key elements that must appear for full credit
+```
+
+### Generate Extended Response Prompts
+
+```
+Write an extended response prompt for a [grade level] [subject] assessment.
+
+Objective: [paste specific learning objective]
+DOK Level: [3 or 4]
+
+The prompt should:
+- Present a scenario, data set, or source material for students to analyze
+- Ask students to construct an argument or explanation using evidence
+- Specify the expected length and format
+- Allow for multiple valid approaches
+
+Also provide:
+- A 4-level scoring rubric (Exceeds, Meets, Approaching, Beginning)
+- An exemplar response at the "Meets" level
+```
+
+### Generate Performance Task
+
+```
+Design a performance task for [grade level] [subject] students.
+
+Objectives assessed:
+1. [Objective 1]
+2. [Objective 2]
+
+The task should:
+- Present a realistic scenario that requires applying content knowledge
+- Include 2-3 components or steps
+- Be completable in [time frame]
+- Require students to produce a specific deliverable
+
+Provide:
+- Student-facing directions
+- A materials/resource list
+- Scoring criteria for each objective
+```
+
+## Review and Quality Control
+
+After AI generates assessment items, apply this checklist before using them:
+
+<Table striped highlightOnHover withTableBorder withColumnBorders my="md">
+  <Table.Thead>
+    <Table.Tr>
+      <Table.Th>Check</Table.Th>
+      <Table.Th>Question to Ask</Table.Th>
+    </Table.Tr>
+  </Table.Thead>
+  <Table.Tbody>
+    <Table.Tr>
+      <Table.Td><strong>Content accuracy</strong></Table.Td>
+      <Table.Td>Is every statement in the item factually correct?</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Alignment</strong></Table.Td>
+      <Table.Td>Does the item measure the intended objective at the intended DOK level?</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Clarity</strong></Table.Td>
+      <Table.Td>Will students understand what is being asked without ambiguity?</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Bias</strong></Table.Td>
+      <Table.Td>Does the item assume cultural knowledge, experiences, or language that could disadvantage some students?</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Grade appropriateness</strong></Table.Td>
+      <Table.Td>Is the reading level and complexity appropriate for the target students?</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Distractor quality</strong></Table.Td>
+      <Table.Td>Are wrong answers plausible but clearly incorrect to a knowledgeable student?</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Single correct answer</strong></Table.Td>
+      <Table.Td>Is there exactly one defensible correct answer (for selected-response items)?</Table.Td>
+    </Table.Tr>
+  </Table.Tbody>
+</Table>
+
+<Callout type="success" title="Workflow tip">
+Use AI to generate a first draft of 10-15 items, then review and select the best 5-8. It is faster to curate from a larger pool than to write each item from scratch. Always pilot items with a small group before using them for high-stakes assessment.
+</Callout>
