@@ -1,8 +1,5 @@
 {
-  "index": {
-    "title": "Home",
-    "type": "page"
-  },
+  "index": "Home",
   "getting-started": "Getting Started",
   "foundations": "Foundations",
   "mission-design": "Mission Design",
