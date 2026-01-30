@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*
+ * Fix Nextra sidebar visibility.
+ * Mantine's global styles (@mantine/core/styles.css) include CSS resets
+ * that interfere with Nextra's docs theme layout, causing the sidebar
+ * to be hidden or collapsed. These overrides restore proper behavior.
+ */
+.nextra-sidebar-container {
+  display: flex !important;
+  flex-direction: column;
+  width: var(--nextra-sidebar-width);
+}
+
+/* Ensure the sidebar nav items are visible */
+.nextra-sidebar-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Restore sidebar layout within the main wrapper */
+.nextra-nav-container ~ div {
+  display: flex !important;
+}
+
+/* Ensure sidebar content is not hidden by Mantine box-sizing resets */
+.nextra-sidebar-container a,
+.nextra-sidebar-container button,
+.nextra-sidebar-container summary {
+  display: flex;
+  align-items: center;
+}
