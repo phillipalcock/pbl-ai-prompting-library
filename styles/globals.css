@@ -58,3 +58,71 @@ article.nextra-body-typesetting-article {
   min-width: 0;
   flex: 1;
 }
+
+/* ========================================
+   Mobile-responsive navigation links
+   ======================================== */
+
+/* Desktop: show inline links, hide hamburger menu */
+.nav-links-desktop {
+  display: flex;
+  align-items: center;
+}
+.nav-links-mobile {
+  display: none;
+}
+
+/* Mobile (< 768px): hide inline links, show hamburger menu */
+@media (max-width: 767px) {
+  .nav-links-desktop {
+    display: none !important;
+  }
+  .nav-links-mobile {
+    display: block !important;
+  }
+}
+
+/* ========================================
+   Mobile UI optimizations
+   ======================================== */
+
+@media (max-width: 767px) {
+  /* Tighter content padding on mobile */
+  .nextra-body-typesetting-article {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Make tables scroll horizontally instead of overflowing */
+  article table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 0.85rem;
+  }
+
+  /* Reduce heading sizes for mobile */
+  article h1 {
+    font-size: 1.75rem !important;
+    line-height: 1.2 !important;
+  }
+  article h2 {
+    font-size: 1.35rem !important;
+    line-height: 1.3 !important;
+  }
+  article h3 {
+    font-size: 1.15rem !important;
+  }
+
+  /* Improve line height for readability on small screens */
+  article p,
+  article li {
+    line-height: 1.7;
+  }
+
+  /* Compact navbar height on mobile */
+  .nextra-nav-container nav {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+}
