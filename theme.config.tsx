@@ -33,7 +33,7 @@ const config: DocsThemeConfig = {
     extraContent: (
       <>
         <a
-          href="https://yourgumroadlink.com"
+          href="https://eduaiworkflows.gumroad.com/"
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -47,7 +47,7 @@ const config: DocsThemeConfig = {
             marginRight: '8px',
           }}
         >
-          Store
+          Gumroad Store
         </a>
         <a
           href="mailto:phil@pblfuturelabs.com"
