@@ -8,10 +8,15 @@
  * that interfere with Nextra's docs theme layout, causing the sidebar
  * to be hidden or collapsed. These overrides restore proper behavior.
  */
+
+/* Force sidebar container to be visible and properly laid out */
 .nextra-sidebar-container {
   display: flex !important;
   flex-direction: column;
   width: var(--nextra-sidebar-width);
+  visibility: visible !important;
+  opacity: 1 !important;
+  overflow: visible;
 }
 
 /* Ensure the sidebar nav items are visible */
@@ -19,9 +24,16 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: block !important;
 }
 
-/* Restore sidebar layout within the main wrapper */
+.nextra-sidebar-container li {
+  display: list-item !important;
+  visibility: visible !important;
+}
+
+/* Restore sidebar layout within the main wrapper —
+   Nextra wraps the sidebar + content in a flex row after the nav */
 .nextra-nav-container ~ div {
   display: flex !important;
 }
@@ -32,4 +44,17 @@
 .nextra-sidebar-container summary {
   display: flex;
   align-items: center;
+  visibility: visible !important;
+}
+
+/* Prevent Mantine's *, *::before, *::after reset from collapsing Nextra layout */
+.nextra-sidebar-container,
+.nextra-sidebar-container * {
+  box-sizing: border-box;
+}
+
+/* Ensure the main content area beside the sidebar also displays correctly */
+article.nextra-body-typesetting-article {
+  min-width: 0;
+  flex: 1;
 }
