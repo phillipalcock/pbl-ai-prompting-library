@@ -33,6 +33,70 @@ const config: DocsThemeConfig = {
     extraContent: (
       <>
         <a
+          href="/about"
+          style={{
+            padding: '6px 12px',
+            fontSize: '14px',
+            fontWeight: 500,
+            color: '#fff',
+            background: '#3b82f6',
+            borderRadius: '6px',
+            textDecoration: 'none',
+            marginRight: '8px',
+          }}
+        >
+          About
+        </a>
+        <a
+          href="/coaching"
+          style={{
+            padding: '6px 12px',
+            fontSize: '14px',
+            fontWeight: 500,
+            color: '#fff',
+            background: '#8b5cf6',
+            borderRadius: '6px',
+            textDecoration: 'none',
+            marginRight: '8px',
+          }}
+        >
+          Coaching
+        </a>
+        <a
+          href="https://aiforbeginners.substack.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            padding: '6px 12px',
+            fontSize: '14px',
+            fontWeight: 500,
+            color: '#fff',
+            background: '#f97316',
+            borderRadius: '6px',
+            textDecoration: 'none',
+            marginRight: '8px',
+          }}
+        >
+          Blog
+        </a>
+        <a
+          href="https://www.linkedin.com/in/phillipalcock/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            padding: '6px 12px',
+            fontSize: '14px',
+            fontWeight: 500,
+            color: '#fff',
+            background: '#0a66c2',
+            borderRadius: '6px',
+            textDecoration: 'none',
+            marginRight: '8px',
+          }}
+        >
+          LinkedIn
+        </a>
+        <a
           href="https://eduaiworkflows.gumroad.com/"
           target="_blank"
           rel="noopener noreferrer"
