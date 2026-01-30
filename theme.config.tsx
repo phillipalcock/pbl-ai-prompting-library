@@ -29,6 +29,44 @@ const config: DocsThemeConfig = {
   toc: {
     backToTop: true,
   },
+  navbar: {
+    extraContent: (
+      <>
+        <a
+          href="https://yourgumroadlink.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            padding: '6px 12px',
+            fontSize: '14px',
+            fontWeight: 500,
+            color: '#fff',
+            background: '#6366f1',
+            borderRadius: '6px',
+            textDecoration: 'none',
+            marginRight: '8px',
+          }}
+        >
+          Store
+        </a>
+        <a
+          href="mailto:phil@pblfuturelabs.com"
+          style={{
+            padding: '6px 12px',
+            fontSize: '14px',
+            fontWeight: 500,
+            color: '#fff',
+            background: '#10b981',
+            borderRadius: '6px',
+            textDecoration: 'none',
+            marginRight: '8px',
+          }}
+        >
+          Email Me
+        </a>
+      </>
+    ),
+  },
 }
 
 export default config
