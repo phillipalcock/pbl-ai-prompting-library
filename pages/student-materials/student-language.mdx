@@ -1,0 +1,146 @@
+import { Callout } from '../../components/Callout'
+import { Table } from '@mantine/core'
+
+# Student-Facing Language
+
+Student materials are written for students, not teachers. The language should be direct, clear, and actionable. When students can read and follow instructions independently, class time shifts from managing confusion to supporting learning.
+
+## Principles
+
+### Write to the Student
+
+Use "you" and "your team." Avoid third-person references like "students will" — that language belongs in lesson plans, not in materials students read.
+
+<Table striped highlightOnHover withTableBorder withColumnBorders my="md">
+  <Table.Thead>
+    <Table.Tr>
+      <Table.Th>Teacher-Facing</Table.Th>
+      <Table.Th>Student-Facing</Table.Th>
+    </Table.Tr>
+  </Table.Thead>
+  <Table.Tbody>
+    <Table.Tr>
+      <Table.Td>Students will analyze data</Table.Td>
+      <Table.Td>Analyze your data using the table below</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>The objective is to...</Table.Td>
+      <Table.Td>In this section, you will...</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Assessment will measure...</Table.Td>
+      <Table.Td>You'll be evaluated on...</Table.Td>
+    </Table.Tr>
+  </Table.Tbody>
+</Table>
+
+### Be Direct
+
+Use imperative sentences for instructions:
+- "Read the article and highlight three key claims."
+- "Record your observations in the table."
+- "Discuss your findings with your team."
+
+<Callout type="warning" title="Avoid passive voice">
+"The data should be recorded in the table" puts the action at a distance. "Record your data in the table" tells students exactly what to do.
+</Callout>
+
+### Match the Grade Level
+
+Use vocabulary appropriate to your students. When technical terms are necessary, define them in context. A good test: read the instructions aloud. If they sound like a textbook, simplify. If they sound like you are talking to the student, they are close.
+
+### Be Specific
+
+Vague instructions cause confusion. Students should never have to guess what "enough" means or how to start.
+
+<Table striped highlightOnHover withTableBorder withColumnBorders my="md">
+  <Table.Thead>
+    <Table.Tr>
+      <Table.Th>Vague</Table.Th>
+      <Table.Th>Specific</Table.Th>
+    </Table.Tr>
+  </Table.Thead>
+  <Table.Tbody>
+    <Table.Tr>
+      <Table.Td>Research your topic</Table.Td>
+      <Table.Td>Find 3 sources about [topic]. For each, record the title, author, key finding, and how it connects to your question.</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Analyze the data</Table.Td>
+      <Table.Td>Calculate the mean and range for each data set. Create a bar graph comparing the three locations.</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Reflect on your learning</Table.Td>
+      <Table.Td>Write 3-4 sentences answering: What did you learn that surprised you? How did your thinking change?</Table.Td>
+    </Table.Tr>
+  </Table.Tbody>
+</Table>
+
+## Applying These Principles
+
+When reviewing any student material, check every instruction against these four principles. If an instruction fails any one of them, revise it before distributing the material.
+
+**Quick self-check:**
+1. Does it speak directly to the student? (Write to the Student)
+2. Does it tell the student what to do in a clear command? (Be Direct)
+3. Would the student understand every word? (Match the Grade Level)
+4. Does the student know exactly what to produce and how much? (Be Specific)
+
+## AI Prompts for Converting Teacher-Facing Content to Student-Facing Language
+
+### Convert Teacher Language to Student Language
+
+```
+I have teacher-facing content that I need to rewrite for students.
+
+Grade level: [grade]
+Reading level: [target reading level]
+
+Here is the teacher-facing content:
+[paste your content]
+
+Rewrite this so that:
+- All instructions are addressed to "you" (the student)
+- Sentences use imperative voice ("Read the article," not "Students will read the article")
+- Vocabulary matches the grade level — define technical terms in context
+- Every instruction is specific — include what to do, how much, and in what format
+- The tone is encouraging but direct
+
+Return the rewritten version and a brief note on the key changes you made.
+```
+
+### Check Reading Level and Simplify
+
+```
+Review the following student-facing text for reading level and clarity.
+
+Target grade level: [grade]
+Target reading level: [target, e.g., Lexile range or Flesch-Kincaid grade]
+
+Text:
+[paste your student-facing text]
+
+Identify:
+- Any sentences that are too long or complex for the target reading level
+- Vocabulary that may need simpler alternatives or in-context definitions
+- Any instructions that are vague or could confuse students
+
+Then provide a revised version with these issues fixed. Keep the original meaning and structure intact.
+```
+
+### Generate Student-Facing Instructions from a Lesson Plan
+
+```
+I have a lesson plan with teacher-facing instructions. I need to create the student-facing version for a handout or worksheet.
+
+Grade level: [grade]
+Lesson plan excerpt:
+[paste the relevant section of your lesson plan]
+
+Convert this into student-facing instructions that:
+- Address the student directly using "you"
+- Use numbered steps for any multi-step process
+- Are specific about what students should produce (how many sentences, what format, etc.)
+- Include any necessary context or definitions students will need
+- Fit on one page (keep it under 250 words)
+```

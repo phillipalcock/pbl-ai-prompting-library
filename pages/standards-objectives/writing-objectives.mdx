@@ -1,0 +1,154 @@
+import { Callout } from '../../components/Callout'
+import { Table } from '@mantine/core'
+
+# Writing Learning Objectives
+
+Clear learning objectives make everything else in curriculum design easier — from assessment to lesson materials.
+
+## Anatomy of a Good Objective
+
+A strong objective includes:
+
+1. **Subject** — "Students will..."
+2. **Measurable verb** — An action you can observe and assess
+3. **Content** — What they're working with
+4. **Context or condition** — The situation or constraint
+
+**Example:** Students will *analyze* water quality data *from three local sources* to *identify patterns in contamination levels*.
+
+## Verbs to Use (and Avoid)
+
+<Table striped highlightOnHover withTableBorder withColumnBorders my="md">
+  <Table.Thead>
+    <Table.Tr>
+      <Table.Th>Use (Observable Actions)</Table.Th>
+      <Table.Th>Avoid (Internal States)</Table.Th>
+    </Table.Tr>
+  </Table.Thead>
+  <Table.Tbody>
+    <Table.Tr>
+      <Table.Td>Analyze</Table.Td>
+      <Table.Td>Understand</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Compare</Table.Td>
+      <Table.Td>Know</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Design</Table.Td>
+      <Table.Td>Learn about</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Evaluate</Table.Td>
+      <Table.Td>Appreciate</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Construct</Table.Td>
+      <Table.Td>Be familiar with</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Justify</Table.Td>
+      <Table.Td>Be aware of</Table.Td>
+    </Table.Tr>
+  </Table.Tbody>
+</Table>
+
+The left column describes observable actions. The right column describes internal states you cannot directly assess.
+
+## Common Mistakes
+
+- **Too vague:** "Students will understand ecosystems" — How will you know?
+- **Too narrow:** "Students will label the parts of a cell" — This is a task, not a learning objective
+- **Not aligned:** The objective does not match the standard it claims to address
+- **Not assessable:** No clear way to measure whether the student met the objective
+
+<Callout type="warning" title="The 'understand' trap">
+If your objective uses "understand," "know," or "learn about," ask yourself: *What would a student do to show they understand?* Replace the vague verb with that observable action. "Understand photosynthesis" becomes "Explain the process of photosynthesis, identifying the inputs, outputs, and energy transformation involved."
+</Callout>
+
+## Writing Objectives from Unpacked Standards
+
+Once you have unpacked a standard (see [Unpacking Standards](/standards-objectives/unpacking-standards)), each knowledge component and skill becomes a candidate for a learning objective. The process is:
+
+1. Take one skill-knowledge pair from your unpacked standard
+2. Add a measurable verb that matches the cognitive demand level
+3. Specify the content students will work with
+4. Include any conditions from the standard
+5. Check that the objective is specific enough to assess but broad enough to teach toward
+
+**From standard to objective — example:**
+
+- **Standard:** CCSS.ELA-LITERACY.RI.8.6 — *Determine an author's point of view or purpose in a text and analyze how the author acknowledges and responds to conflicting evidence or viewpoints.*
+- **Unpacked skills:** Determine point of view; analyze response to conflicting evidence
+- **Objective 1:** Students will identify the author's point of view in an informational text and cite specific passages that reveal the author's purpose.
+- **Objective 2:** Students will analyze how an author acknowledges conflicting evidence by comparing the author's claims with at least two counterarguments presented in the text.
+
+## AI Prompt Templates for Generating Objectives
+
+### Prompt 1: Generate Objectives from a Standard
+
+```
+I have unpacked the following standard and need to write measurable learning objectives.
+
+Standard: [paste the full standard text]
+Standard code: [e.g., CCSS.ELA-LITERACY.RI.8.6]
+
+Unpacked components:
+- Skills: [list the skills you identified]
+- Knowledge: [list the knowledge components]
+- Cognitive demand: [Bloom's level / DOK level]
+- Conditions: [any conditions from the standard]
+
+Please generate 3-5 measurable learning objectives that collectively address this standard. Each objective should:
+1. Begin with "Students will..."
+2. Use an observable, measurable verb
+3. Specify the content students will work with
+4. Include conditions where appropriate
+5. Match the cognitive demand level of the standard
+```
+
+### Prompt 2: Improve Existing Objectives
+
+```
+Review the following learning objectives and improve them. For each objective, check that it:
+- Uses a measurable verb (not "understand," "know," or "learn about")
+- Is specific enough to assess
+- Matches the cognitive level of its source standard
+- Includes appropriate conditions or context
+
+Objectives:
+1. [paste objective 1]
+2. [paste objective 2]
+3. [paste objective 3]
+
+Source standard: [paste the standard, if applicable]
+
+For each objective, provide:
+- The original objective
+- Issues identified
+- A revised version
+- The Bloom's Taxonomy level of the revised objective
+```
+
+### Prompt 3: Differentiate Objectives by Cognitive Level
+
+```
+I need to write learning objectives at multiple cognitive levels for the following topic, so I can differentiate instruction and assessment.
+
+Topic: [describe the topic or content area]
+Source standard: [paste the standard]
+
+Please generate one learning objective at each of these Bloom's Taxonomy levels:
+1. Remember
+2. Understand
+3. Apply
+4. Analyze
+5. Evaluate
+6. Create
+
+Each objective should address the same core content but require progressively deeper thinking.
+```
+
+<Callout type="info" title="Quality check">
+After generating objectives with AI, verify each one against your unpacked standard. AI-generated objectives sometimes drift from the standard's actual requirements — adding content that is not in the standard or missing a key skill. Always cross-reference.
+</Callout>

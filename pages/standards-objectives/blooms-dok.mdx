@@ -1,0 +1,197 @@
+import { Callout } from '../../components/Callout'
+import { Table } from '@mantine/core'
+
+# Bloom's Taxonomy & DOK Alignment
+
+Two frameworks are essential for verifying the cognitive rigor of your learning objectives: Bloom's Taxonomy and Webb's Depth of Knowledge (DOK). This page covers both frameworks and shows how to use AI to check that your objectives hit the right level.
+
+## Bloom's Taxonomy: Six Levels of Cognitive Process
+
+Bloom's Taxonomy organizes thinking skills from simple recall to complex creation. Each level builds on the ones below it.
+
+<Table striped highlightOnHover withTableBorder withColumnBorders my="md">
+  <Table.Thead>
+    <Table.Tr>
+      <Table.Th>Level</Table.Th>
+      <Table.Th>Description</Table.Th>
+      <Table.Th>Example Verbs</Table.Th>
+    </Table.Tr>
+  </Table.Thead>
+  <Table.Tbody>
+    <Table.Tr>
+      <Table.Td>**1. Remember**</Table.Td>
+      <Table.Td>Recall facts, terms, and basic concepts</Table.Td>
+      <Table.Td>List, define, name, identify, recall, recognize</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>**2. Understand**</Table.Td>
+      <Table.Td>Explain ideas or concepts in your own words</Table.Td>
+      <Table.Td>Summarize, describe, interpret, classify, explain, paraphrase</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>**3. Apply**</Table.Td>
+      <Table.Td>Use information in new situations</Table.Td>
+      <Table.Td>Solve, demonstrate, use, execute, implement, calculate</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>**4. Analyze**</Table.Td>
+      <Table.Td>Draw connections, distinguish parts, examine relationships</Table.Td>
+      <Table.Td>Compare, contrast, differentiate, organize, examine, categorize</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>**5. Evaluate**</Table.Td>
+      <Table.Td>Justify a decision or position using criteria</Table.Td>
+      <Table.Td>Judge, critique, assess, justify, argue, defend, prioritize</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>**6. Create**</Table.Td>
+      <Table.Td>Produce new or original work</Table.Td>
+      <Table.Td>Design, construct, develop, formulate, compose, propose</Table.Td>
+    </Table.Tr>
+  </Table.Tbody>
+</Table>
+
+## Webb's Depth of Knowledge: Four Levels
+
+While Bloom's focuses on the *type* of thinking, Webb's DOK focuses on the *depth and complexity* of thinking required. The same verb can appear at different DOK levels depending on context.
+
+<Table striped highlightOnHover withTableBorder withColumnBorders my="md">
+  <Table.Thead>
+    <Table.Tr>
+      <Table.Th>DOK Level</Table.Th>
+      <Table.Th>Description</Table.Th>
+      <Table.Th>What It Looks Like</Table.Th>
+    </Table.Tr>
+  </Table.Thead>
+  <Table.Tbody>
+    <Table.Tr>
+      <Table.Td>**Level 1: Recall & Reproduction**</Table.Td>
+      <Table.Td>Recall a fact, term, or procedure</Table.Td>
+      <Table.Td>Define vocabulary, identify elements on a diagram, follow a one-step procedure</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>**Level 2: Skills & Concepts**</Table.Td>
+      <Table.Td>Use information, apply a concept, make decisions about how to approach a problem</Table.Td>
+      <Table.Td>Classify items into categories, compare two texts, solve a multi-step problem with a known method</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>**Level 3: Strategic Thinking**</Table.Td>
+      <Table.Td>Reason, plan, justify, and use evidence. Requires abstract thinking and multiple steps without a predetermined path</Table.Td>
+      <Table.Td>Construct an argument with evidence, analyze a data set for patterns, design an investigation</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>**Level 4: Extended Thinking**</Table.Td>
+      <Table.Td>Investigate, synthesize across sources, apply concepts to new situations over time</Table.Td>
+      <Table.Td>Conduct a research project, create an original proposal to solve a community problem, synthesize multiple sources into a position paper</Table.Td>
+    </Table.Tr>
+  </Table.Tbody>
+</Table>
+
+<Callout type="info" title="Bloom's vs. DOK">
+A common misconception is that Bloom's and DOK are interchangeable. They are not. Bloom's describes the *type* of thinking (e.g., analyze, evaluate). DOK describes the *depth* required. You can have a Bloom's "Analyze" task at DOK Level 2 (compare two items in a straightforward way) or at DOK Level 3 (analyze a complex data set to draw original conclusions). Always check both.
+</Callout>
+
+## Using AI to Level-Check Objectives
+
+The most common alignment error is writing objectives that claim a high cognitive level but actually require only recall or basic application. AI can help catch this.
+
+### Prompt 1: Classify Objectives by Bloom's and DOK
+
+```
+Classify each of the following learning objectives by Bloom's Taxonomy level and Webb's Depth of Knowledge level. For each objective, provide:
+
+1. The Bloom's level (Remember, Understand, Apply, Analyze, Evaluate, Create)
+2. The DOK level (1, 2, 3, or 4)
+3. A brief justification explaining why you assigned each level
+4. Whether the verb matches the actual cognitive demand (sometimes a verb like "identify" is used but the task actually requires analysis)
+
+Objectives:
+1. [paste objective 1]
+2. [paste objective 2]
+3. [paste objective 3]
+4. [paste objective 4]
+```
+
+### Prompt 2: Check Alignment Between Standard and Objective
+
+```
+I need to verify that the following learning objectives match the cognitive demand of their source standard.
+
+Standard: [paste full standard text]
+Standard code: [e.g., NGSS MS-LS2-4]
+Expected cognitive level: [e.g., Bloom's: Evaluate, DOK: 3]
+
+Objectives derived from this standard:
+1. [paste objective 1]
+2. [paste objective 2]
+3. [paste objective 3]
+
+For each objective, tell me:
+- Does it match the cognitive demand of the standard?
+- Is it too high or too low?
+- If misaligned, suggest a revised version at the correct level
+```
+
+### Prompt 3: Elevate Low-Level Objectives
+
+```
+The following objectives are currently at a low cognitive level (Bloom's: Remember or Understand). I need to revise them to reach higher levels while keeping the same content focus.
+
+Objectives:
+1. [paste low-level objective 1]
+2. [paste low-level objective 2]
+
+For each objective, provide revised versions at:
+- Bloom's Apply level
+- Bloom's Analyze level
+- Bloom's Evaluate or Create level
+
+Keep the same subject matter but increase the cognitive demand. Explain what changes you made and why.
+```
+
+## Common Misalignments and How to Fix Them
+
+<Table striped highlightOnHover withTableBorder withColumnBorders my="md">
+  <Table.Thead>
+    <Table.Tr>
+      <Table.Th>Problem</Table.Th>
+      <Table.Th>Example</Table.Th>
+      <Table.Th>Fix</Table.Th>
+    </Table.Tr>
+  </Table.Thead>
+  <Table.Tbody>
+    <Table.Tr>
+      <Table.Td>**Standard requires analysis; objective requires recall**</Table.Td>
+      <Table.Td>Standard says "analyze interactions"; objective says "list the parts of an ecosystem"</Table.Td>
+      <Table.Td>Replace "list" with "analyze how changes to one component affect other parts of the ecosystem"</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>**Objective uses a high-level verb but describes a low-level task**</Table.Td>
+      <Table.Td>"Evaluate the definition of photosynthesis" — this is recall dressed up as evaluation</Table.Td>
+      <Table.Td>Make the task genuinely evaluative: "Evaluate two competing explanations for declining plant growth using evidence from lab observations"</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>**Objective exceeds the standard's demand**</Table.Td>
+      <Table.Td>Standard requires DOK 2; objective asks students to design an original investigation (DOK 4)</Table.Td>
+      <Table.Td>Scale back to the standard's level. Over-shooting is not automatically better — it can leave foundational skills unassessed</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>**Multiple cognitive levels collapsed into one objective**</Table.Td>
+      <Table.Td>"Students will identify, analyze, and evaluate ecosystem data" — this spans three Bloom's levels</Table.Td>
+      <Table.Td>Split into separate objectives, one per cognitive level, so you can assess each distinctly</Table.Td>
+    </Table.Tr>
+  </Table.Tbody>
+</Table>
+
+<Callout type="warning" title="Do not rely on verb lists alone">
+Verb lists (like those in the Bloom's table above) are a starting point, not a rule book. The cognitive level of an objective depends on what the student actually has to *do*, not just which verb you used. "Identify the pattern in a data set" requires analysis. "Identify the capital of France" requires recall. Always evaluate the full objective in context.
+</Callout>
+
+<Callout type="success" title="Quick alignment check">
+After writing your objectives, run this three-part check:
+1. **Verb check** — Does the verb match the intended cognitive level?
+2. **Task check** — Does the actual task require the thinking the verb implies?
+3. **Standard check** — Does the objective's cognitive level match the source standard?
+
+If all three align, your objective is solid. If any one fails, revise before moving to assessment design.
+</Callout>

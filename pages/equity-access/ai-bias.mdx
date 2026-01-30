@@ -1,0 +1,223 @@
+import { Callout } from '../../components/Callout'
+import { Table, Text, List, ThemeIcon, Stack, Paper, Code } from '@mantine/core'
+
+# Addressing Bias in AI Content
+
+AI language models generate content based on patterns in their training data, which means their outputs can reflect and even amplify societal biases. Educators using AI to develop curriculum materials must understand the types of bias that can appear and have systematic processes for identifying and correcting them.
+
+<Callout type="warning" title="AI Output Always Requires Review">
+  No AI-generated educational content should reach students without a deliberate review for bias. Even well-crafted prompts can produce outputs that contain implicit assumptions or exclusionary framing.
+</Callout>
+
+## Types of Bias in AI-Generated Content
+
+### Cultural Assumptions
+
+AI outputs often default to Western, English-speaking cultural norms. This can appear as references to specific holidays (e.g., assuming all students celebrate Christmas), family structures (e.g., two-parent households), naming conventions, or cultural practices presented as universal.
+
+### Socioeconomic Assumptions
+
+Generated content may assume access to resources that not all students have — personal computers, internet at home, travel experiences, specific foods or hobbies associated with middle-class or affluent households.
+
+### Gender and Racial Stereotypes
+
+AI can reproduce stereotypes in subtle ways: associating certain professions with specific genders, defaulting to particular racial or ethnic backgrounds when describing characters, or framing achievements by underrepresented groups as exceptional rather than ordinary.
+
+### Geographic Bias
+
+Content may default to urban or suburban U.S. contexts, overlooking rural communities, non-U.S. settings, or the diversity within any geographic region. Examples, scenarios, and references may not resonate with students outside the assumed setting.
+
+### Historical Narrative Bias
+
+AI-generated historical content may reflect dominant narratives, minimizing the perspectives of marginalized communities, glossing over systemic injustices, or presenting contested events from a single viewpoint.
+
+## Examples of Bias in Educational AI Outputs
+
+The following examples illustrate how bias can appear in AI-generated curriculum content and how to correct it.
+
+### Example 1: Cultural Assumptions in a Math Problem
+
+**Before (biased output):**
+> "Emma's family is planning their annual ski vacation. If lift tickets cost $85 per person and the family of four is staying for 3 days, how much will they spend on lift tickets?"
+
+**After (corrected):**
+> "A community center is organizing a weekend event. If entry costs $5 per person and 85 people attend over 3 days, how much will the center collect in entry fees?"
+
+The corrected version removes assumptions about family size, affluence, and leisure activities while preserving the same mathematical concepts.
+
+### Example 2: Gender Stereotypes in a Science Prompt
+
+**Before (biased output):**
+> "The engineer designed the bridge. He calculated the load-bearing capacity and presented his findings to the construction crew, led by foreman Mike."
+
+**After (corrected):**
+> "The engineering team designed the bridge. They calculated the load-bearing capacity and presented their findings to the construction crew led by site supervisor Priya Agarwal."
+
+The corrected version avoids defaulting to male pronouns for technical roles and uses diverse names.
+
+### Example 3: Socioeconomic Assumptions in a Writing Assignment
+
+**Before (biased output):**
+> "Write about your favorite vacation destination and what you did there. Describe the hotel you stayed in and the restaurants you visited."
+
+**After (corrected):**
+> "Write about a place that is meaningful to you. It could be somewhere you have visited, a place in your neighborhood, or somewhere you have learned about and would like to explore. Describe what makes this place important."
+
+The corrected version does not assume travel experience or disposable income.
+
+## A Systematic Review Process
+
+Use the following process each time you review AI-generated educational content before it reaches students.
+
+### Step 1: Initial Read-Through
+
+Read the content from the perspective of your most marginalized students. Ask: Would every student in my classroom see themselves in this material? Would any student feel excluded or othered?
+
+### Step 2: Check Assumptions
+
+Identify any assumptions the content makes about students' backgrounds, resources, family structures, prior experiences, or cultural knowledge. Flag anything that is not universally applicable.
+
+### Step 3: Evaluate Representation
+
+Examine names, characters, scenarios, and examples. Are diverse identities represented? Are they represented authentically and without stereotyping? Are contributions from underrepresented groups included as a matter of course?
+
+### Step 4: Assess Language
+
+Look for language that may be exclusionary, gendered unnecessarily, ableist, or that centers a particular cultural or socioeconomic norm. Check for reading level appropriateness and clarity for English learners.
+
+### Step 5: Verify Claims
+
+For historical, scientific, or cultural content, verify that the AI has not presented contested narratives as fact or omitted important perspectives. Cross-reference with trusted sources.
+
+### Step 6: Revise and Document
+
+Make corrections, and keep a record of the types of bias you find. Over time, this log will help you refine your prompts to reduce the frequency of biased outputs.
+
+## AI Prompts for Bias-Checking Content
+
+Use these prompts to ask AI to help identify potential bias in content it or you have generated. Always apply your own judgment to the results — AI bias-checking is a supplement, not a replacement, for human review.
+
+### General Bias Review Prompt
+
+```
+Review the following educational material for potential biases, including cultural assumptions, socioeconomic assumptions, gender or racial stereotypes, geographic bias, and historical narrative bias. For each issue you identify, explain the concern and suggest a specific revision.
+
+Material to review:
+[paste content]
+
+Grade level: [grade level]
+Student population: [brief description of your students' diversity]
+```
+
+### Representation Check Prompt
+
+```
+Analyze the following educational material for representation and inclusivity. Consider:
+1. Are diverse identities (racial, ethnic, gender, disability, family structure) represented?
+2. Are any groups portrayed stereotypically?
+3. Does the material assume specific cultural knowledge or experiences?
+4. Is the language accessible and inclusive?
+
+Provide specific suggestions for improvement.
+
+Material:
+[paste content]
+```
+
+### Alternative Perspectives Prompt
+
+```
+The following educational content addresses [topic]. Identify any perspectives that are missing or underrepresented. Suggest additions that would make this material more balanced and inclusive of multiple viewpoints, particularly those of historically marginalized communities.
+
+Content:
+[paste content]
+```
+
+## Strategies for Diversifying AI Outputs
+
+Rather than relying solely on post-hoc review, you can proactively shape AI outputs to be more inclusive from the start.
+
+### Specify Diverse Contexts
+
+When prompting AI, explicitly request diversity in names, settings, family structures, and cultural references. For example:
+
+```
+Create a set of 5 reading comprehension passages for 4th grade.
+Requirements:
+- Use names from a variety of cultural backgrounds
+- Set stories in urban, suburban, and rural environments
+- Include characters with different family structures
+- Represent characters with disabilities as full participants, not as objects of inspiration
+- Avoid assumptions about socioeconomic status
+```
+
+### Ask for Multiple Perspectives
+
+When generating content about historical events, social issues, or cultural topics, prompt the AI to include multiple viewpoints:
+
+```
+Create a lesson on [historical event] that includes perspectives from at least three different groups affected by this event. Ensure that marginalized voices are centered rather than treated as secondary to the dominant narrative.
+```
+
+### Request Neutral Framing
+
+For sensitive topics, ask the AI to present information without value judgments or assumptions:
+
+```
+Write an explanation of [topic] for [grade level] students. Use neutral, inclusive language. Do not assume students' prior knowledge, cultural background, or personal experiences. Provide context for any cultural references.
+```
+
+### Iterate and Refine
+
+If the first output contains bias, use follow-up prompts to refine:
+
+```
+The previous output assumes [specific assumption]. Please revise to remove this assumption and make the content accessible to students who [describe different context]. Maintain the same learning objectives.
+```
+
+## Bias Review Checklist
+
+Use this checklist when reviewing any AI-generated educational content before sharing it with students.
+
+<Callout type="info" title="Bias Review Checklist">
+  **Cultural Representation**
+  - Content does not assume a specific cultural background as the default
+  - Diverse names, settings, and cultural contexts are included
+  - Cultural references are explained rather than assumed to be known
+  - Holidays, traditions, and customs are not presented as universal
+
+  **Socioeconomic Inclusivity**
+  - Content does not assume access to specific resources (technology, transportation, materials)
+  - Examples and scenarios are accessible regardless of income level
+  - Activities do not require purchases or resources beyond what the school provides
+
+  **Gender and Identity**
+  - Language is gender-inclusive where appropriate
+  - Roles, professions, and interests are not associated with specific genders
+  - Diverse family structures are reflected or accommodated
+  - Content avoids reinforcing stereotypes about any identity group
+
+  **Racial and Ethnic Equity**
+  - Content does not center whiteness as the default
+  - Contributions and perspectives of people of color are included substantively
+  - Racial and ethnic groups are portrayed with nuance, not as monolithic
+  - Historical content includes perspectives of marginalized communities
+
+  **Accessibility**
+  - Language is clear and avoids unnecessary jargon
+  - Content is appropriate for the target reading level
+  - English learners can access the material with available supports
+  - Students with disabilities are represented as capable participants
+
+  **Geographic and Contextual Balance**
+  - Content is relevant to students in varied geographic settings
+  - Urban, suburban, and rural contexts are all represented
+  - Non-U.S. perspectives are included where appropriate
+  - Local contexts are not assumed to be universal
+
+  **Historical and Factual Accuracy**
+  - Historical narratives include multiple perspectives
+  - Contested events are presented with appropriate nuance
+  - Contributions of marginalized groups are not minimized
+  - Claims have been verified against trusted sources
+</Callout>

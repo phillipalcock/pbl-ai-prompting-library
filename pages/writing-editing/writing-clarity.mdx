@@ -1,0 +1,228 @@
+import { Tabs, Table, Card, Text, Stack, List, Badge, Group, Accordion, Alert } from '@mantine/core'
+
+# Writing for Clarity
+
+Clear writing is the foundation of effective curriculum materials. When instructions are ambiguous or language is overcomplicated, students lose time figuring out what you mean instead of learning.
+
+This page covers practical techniques for writing educational content that communicates on the first read.
+
+## Plain Language Principles
+
+Plain language does not mean dumbed-down language. It means choosing the most direct way to say something so readers understand it quickly.
+
+**Core principles:**
+
+- Use short sentences for instructions (aim for 15-20 words per sentence)
+- Choose common words over formal alternatives ("use" not "utilize," "help" not "facilitate")
+- Put the most important information first
+- Use active voice so the reader knows who does what
+- Define technical terms when you introduce them
+
+<Alert variant="light" color="blue" title="Plain language is not the same as simple content" my="md">
+  You can teach complex ideas in plain language. The goal is to remove unnecessary barriers between the reader and the content, not to reduce the complexity of the ideas themselves.
+</Alert>
+
+## Structuring Instructions for Clarity
+
+The way you organize instructions matters as much as the words you choose.
+
+<Tabs defaultValue="sequencing" my="md">
+  <Tabs.List>
+    <Tabs.Tab value="sequencing">Sequencing</Tabs.Tab>
+    <Tabs.Tab value="chunking">Chunking</Tabs.Tab>
+    <Tabs.Tab value="signposting">Signposting</Tabs.Tab>
+  </Tabs.List>
+
+  <Tabs.Panel value="sequencing" pt="md">
+    ### Use Logical Sequencing
+
+    Present steps in the order students should complete them. Avoid burying prerequisites at the end.
+
+    | Unclear | Clear |
+    |---------|-------|
+    | Write your analysis (make sure you have completed the data table first). | 1. Complete the data table. 2. Review your results. 3. Write your analysis. |
+    | Discuss with your group after reading pages 4-6 and answering the questions. | 1. Read pages 4-6. 2. Answer the questions on this page. 3. Discuss your answers with your group. |
+  </Tabs.Panel>
+
+  <Tabs.Panel value="chunking" pt="md">
+    ### Break Content into Chunks
+
+    Group related information together under clear headings. Each section should address one idea or task.
+
+    **Effective chunking strategies:**
+    - One instruction per numbered step
+    - One concept per paragraph
+    - One topic per page or section
+    - Use bullet lists for sets of related items
+    - Use numbered lists for sequential steps
+  </Tabs.Panel>
+
+  <Tabs.Panel value="signposting" pt="md">
+    ### Use Signposting
+
+    Tell readers what is coming, what they are doing now, and what comes next.
+
+    **Examples of signposts:**
+    - "In this section, you will..."
+    - "Before you begin, make sure you have..."
+    - "Next, you will use your results to..."
+    - "By the end of this activity, you should be able to..."
+
+    Signposts reduce cognitive load by letting readers focus on the content instead of figuring out the structure.
+  </Tabs.Panel>
+</Tabs>
+
+## Writing for Different Audiences
+
+Educational materials often serve multiple audiences. Adjust your language and level of detail accordingly.
+
+<Accordion variant="separated" my="md">
+  <Accordion.Item value="students">
+    <Accordion.Control>
+      <Group>
+        <Badge color="blue">Students</Badge>
+        <Text size="sm">Direct, actionable, second person</Text>
+      </Group>
+    </Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="xs">
+        <Text fw={600}>Key characteristics:</Text>
+        <List>
+          <List.Item>Use "you" and "your" throughout</List.Item>
+          <List.Item>Use imperative sentences for instructions ("Read the article," "Record your observations")</List.Item>
+          <List.Item>Match vocabulary to the grade level</List.Item>
+          <List.Item>Be specific about what to do, how much to write, and what format to use</List.Item>
+          <List.Item>Define technical terms in context</List.Item>
+        </List>
+        <Text fw={600} mt="xs">Example:</Text>
+        <Text>"Read the article and highlight three claims the author makes. For each claim, write one sentence explaining why you agree or disagree."</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="teachers">
+    <Accordion.Control>
+      <Group>
+        <Badge color="green">Teachers</Badge>
+        <Text size="sm">Professional, flexible, rationale-driven</Text>
+      </Group>
+    </Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="xs">
+        <Text fw={600}>Key characteristics:</Text>
+        <List>
+          <List.Item>Explain the purpose behind each activity</List.Item>
+          <List.Item>Offer implementation options and timing suggestions</List.Item>
+          <List.Item>Include tips for common challenges</List.Item>
+          <List.Item>Reference standards and learning objectives</List.Item>
+          <List.Item>Use professional vocabulary without over-explaining pedagogy basics</List.Item>
+        </List>
+        <Text fw={600} mt="xs">Example:</Text>
+        <Text>"This activity targets CCSS.ELA RI.6.8 (trace and evaluate an argument). Allow 20-25 minutes. If students struggle to identify claims, consider modeling the first paragraph as a whole class."</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="parents">
+    <Accordion.Control>
+      <Group>
+        <Badge color="orange">Parents & Guardians</Badge>
+        <Text size="sm">Accessible, reassuring, context-rich</Text>
+      </Group>
+    </Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="xs">
+        <Text fw={600}>Key characteristics:</Text>
+        <List>
+          <List.Item>Avoid jargon and acronyms (or define them clearly)</List.Item>
+          <List.Item>Explain the "why" behind assignments and projects</List.Item>
+          <List.Item>Be specific about expectations and timelines</List.Item>
+          <List.Item>Provide concrete ways to support learning at home</List.Item>
+          <List.Item>Use a warm but professional tone</List.Item>
+        </List>
+        <Text fw={600} mt="xs">Example:</Text>
+        <Text>"Over the next two weeks, your child will work with a team to analyze real community data and present recommendations. You can support this work by discussing local issues at home or helping them find news articles about your neighborhood."</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+</Accordion>
+
+## Avoiding Common Clarity Pitfalls
+
+### Ambiguity
+
+Ambiguous instructions leave students guessing. Be specific about quantity, format, and expectations.
+
+| Ambiguous | Clear |
+|-----------|-------|
+| Write about the topic | Write a 4-5 sentence paragraph explaining how photosynthesis converts sunlight into energy |
+| Research your subject | Find 3 sources about your subject. For each, record the title, author, and one key finding |
+| Analyze the results | Calculate the mean and range. Then write 2 sentences describing what the numbers tell you |
+
+### Passive Voice
+
+Passive voice hides who is responsible for the action. In instructions, this creates confusion.
+
+| Passive | Active |
+|---------|--------|
+| The data should be recorded in the table | Record your data in the table |
+| The essay will be evaluated on clarity | I will evaluate your essay on clarity |
+| The experiment must be completed by Friday | Complete the experiment by Friday |
+
+### Jargon
+
+Every field has jargon. In curriculum materials, the question is whether the jargon serves the learner or creates a barrier.
+
+**When to use technical terms:**
+- The term itself is a learning objective (students need to learn the word)
+- No simpler alternative exists without losing precision
+
+**When to avoid or define terms:**
+- The term is field shorthand that students do not need ("scaffolding," "formative assessment" in student materials)
+- A common word works just as well
+- The audience is parents or community members
+
+## AI Prompts for Improving Clarity
+
+Use these prompts to have AI help you revise drafts for clarity.
+
+### Simplify Language
+
+```
+Review the following educational content and rewrite it using plain language.
+Keep all technical terms that students need to learn, but simplify everything else.
+Target reading level: [grade level].
+
+[paste your content]
+```
+
+### Check for Ambiguity
+
+```
+Read the following instructions written for [grade level] students.
+Identify any instructions that are vague or could be interpreted in more than one way.
+For each issue, explain the ambiguity and suggest a more specific version.
+
+[paste your instructions]
+```
+
+### Convert Passive to Active Voice
+
+```
+Rewrite the following content using active voice throughout.
+For student instructions, use imperative sentences (e.g., "Calculate the mean" not "The mean should be calculated").
+Keep the meaning and content identical.
+
+[paste your content]
+```
+
+### Adapt for a Different Audience
+
+```
+I have the following [teacher guide / student handout / parent letter].
+Rewrite it for [target audience: students at grade X / parents / teachers].
+Adjust the tone, vocabulary, and level of detail for that audience.
+Keep all essential information.
+
+[paste your content]
+```

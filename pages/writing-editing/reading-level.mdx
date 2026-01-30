@@ -1,0 +1,286 @@
+import { Tabs, Table, Card, Text, Stack, List, Badge, Group, Accordion, Alert } from '@mantine/core'
+
+# Reading Level & Tone
+
+Curriculum materials only work if students can read them. This page covers how to assess, adjust, and maintain appropriate reading levels and tone across your educational content.
+
+## How to Assess Reading Level
+
+Several established frameworks help you measure the readability of text. Each uses a slightly different method, but all aim to answer the same question: can the intended audience read and understand this?
+
+<Tabs defaultValue="flesch" my="md">
+  <Tabs.List>
+    <Tabs.Tab value="flesch">Flesch-Kincaid</Tabs.Tab>
+    <Tabs.Tab value="lexile">Lexile</Tabs.Tab>
+    <Tabs.Tab value="practical">Practical Assessment</Tabs.Tab>
+  </Tabs.List>
+
+  <Tabs.Panel value="flesch" pt="md">
+    ### Flesch-Kincaid Grade Level
+
+    The Flesch-Kincaid formula calculates a U.S. grade level based on sentence length and syllable count. It is built into Microsoft Word (under Spelling & Grammar settings) and many online tools.
+
+    **How it works:**
+    - Longer sentences raise the grade level
+    - Words with more syllables raise the grade level
+    - The output is a number corresponding to a U.S. grade level (e.g., 6.2 means early 6th grade)
+
+    **Limitations:**
+    - Does not account for vocabulary difficulty (a rare two-syllable word scores the same as a common one)
+    - Does not assess conceptual complexity
+    - Best used as one data point, not the sole measure
+
+    **How to access it:**
+    - Microsoft Word: File > Options > Proofing > check "Show readability statistics"
+    - Google Docs: use an add-on such as "Readability for Google Docs"
+    - Online: search "Flesch-Kincaid calculator" for free web tools
+  </Tabs.Panel>
+
+  <Tabs.Panel value="lexile" pt="md">
+    ### Lexile Framework
+
+    The Lexile Framework measures both reader ability and text complexity on the same scale, making it useful for matching materials to students.
+
+    **How it works:**
+    - Text is scored on a scale from below 200L (beginning reader) to above 1600L (advanced)
+    - The score considers sentence length and word frequency (less common words score higher)
+    - Students also have Lexile scores from standardized assessments, allowing you to match text to reader
+
+    **Limitations:**
+    - Requires access to the Lexile Analyzer tool (free at hub.lexile.com for shorter texts)
+    - Like Flesch-Kincaid, does not fully capture conceptual difficulty
+    - A text with simple vocabulary about a complex topic may score lower than its true difficulty
+
+    **When to use Lexile:**
+    - When selecting reading passages for student materials
+    - When you know your students' Lexile ranges from assessment data
+    - When building materials for a wide range of reading abilities
+  </Tabs.Panel>
+
+  <Tabs.Panel value="practical" pt="md">
+    ### Practical Assessment
+
+    Readability formulas are useful starting points, but they are not substitutes for human judgment.
+
+    **Practical checks you should always perform:**
+    - Read the text aloud. If you stumble, students will too.
+    - Ask: would a student in this grade understand every sentence on the first read?
+    - Look for sentences longer than 25 words and consider breaking them up.
+    - Check that technical terms are defined the first time they appear.
+    - Have a colleague or a student from the target grade review a sample page.
+
+    **The five-finger rule (for student reading materials):**
+    Have a student read a page. Each time they encounter a word they do not know, they raise a finger. Five or more unknown words on a single page means the text is likely too difficult for independent reading.
+  </Tabs.Panel>
+</Tabs>
+
+## Reading Level Targets by Grade Band
+
+The following table provides approximate targets. Use these as guidelines, not rigid rules. Adjust based on your students' actual reading levels and the purpose of the material.
+
+<Table striped withTableBorder withColumnBorders my="md">
+  <Table.Thead>
+    <Table.Tr>
+      <Table.Th>Grade Band</Table.Th>
+      <Table.Th>Flesch-Kincaid Grade Level</Table.Th>
+      <Table.Th>Lexile Range</Table.Th>
+      <Table.Th>Sentence Length Target</Table.Th>
+      <Table.Th>Key Considerations</Table.Th>
+    </Table.Tr>
+  </Table.Thead>
+  <Table.Tbody>
+    <Table.Tr>
+      <Table.Td>K-2</Table.Td>
+      <Table.Td>0.5 - 2.5</Table.Td>
+      <Table.Td>190L - 530L</Table.Td>
+      <Table.Td>5-10 words</Table.Td>
+      <Table.Td>Simple sentences, common words, large font, visual supports</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>3-5</Table.Td>
+      <Table.Td>3.0 - 5.5</Table.Td>
+      <Table.Td>520L - 830L</Table.Td>
+      <Table.Td>8-15 words</Table.Td>
+      <Table.Td>Introduce academic vocabulary with definitions, short paragraphs</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>6-8</Table.Td>
+      <Table.Td>5.5 - 8.5</Table.Td>
+      <Table.Td>830L - 1010L</Table.Td>
+      <Table.Td>12-20 words</Table.Td>
+      <Table.Td>More complex sentence structures, domain-specific terms defined in context</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>9-10</Table.Td>
+      <Table.Td>8.0 - 10.5</Table.Td>
+      <Table.Td>1010L - 1185L</Table.Td>
+      <Table.Td>15-22 words</Table.Td>
+      <Table.Td>Assumes broader vocabulary, can use compound-complex sentences</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>11-12</Table.Td>
+      <Table.Td>10.0 - 12.0</Table.Td>
+      <Table.Td>1185L - 1385L</Table.Td>
+      <Table.Td>15-25 words</Table.Td>
+      <Table.Td>Near-adult reading level, academic and discipline-specific vocabulary expected</Table.Td>
+    </Table.Tr>
+  </Table.Tbody>
+</Table>
+
+<Alert variant="light" color="blue" title="Instructional text vs. reading passages" my="md">
+  The targets above apply to reading passages and informational text. For instructions and directions, aim one to two grade levels below the student's reading level. Students process instructions differently than narrative or informational text, and clarity matters more than complexity.
+</Alert>
+
+## Adjusting Content for Different Grade Levels
+
+### Strategies for Lowering Reading Level
+
+When content reads above the target grade level, apply these techniques in order:
+
+1. **Shorten sentences.** Break compound and complex sentences into two simpler ones.
+2. **Replace uncommon words.** Swap words with more common synonyms ("use" instead of "utilize," "show" instead of "demonstrate").
+3. **Remove unnecessary qualifiers.** Cut words like "essentially," "basically," "in order to."
+4. **Add definitions.** When a technical term must stay, define it immediately in parentheses or in a nearby glossary.
+5. **Use active voice.** Active sentences are shorter and easier to parse.
+
+### Strategies for Raising Reading Level
+
+When content is below the target level and you want to increase rigor:
+
+1. **Introduce academic vocabulary.** Use discipline-specific terms with clear definitions.
+2. **Increase sentence complexity.** Combine simple sentences into compound or complex ones where the relationship between ideas matters.
+3. **Add nuance.** Include qualifying language ("however," "on the other hand," "under certain conditions").
+4. **Reduce scaffolding.** Remove step-by-step breakdowns and let students work from broader instructions.
+
+### Example: Same Content at Three Levels
+
+<Accordion variant="separated" my="md">
+  <Accordion.Item value="elementary">
+    <Accordion.Control>
+      <Group>
+        <Badge color="blue">Grades 3-5</Badge>
+        <Text size="sm">Flesch-Kincaid ~4.0</Text>
+      </Group>
+    </Accordion.Control>
+    <Accordion.Panel>
+      <Card withBorder p="md">
+        <Text>Plants need three things to make food: sunlight, water, and carbon dioxide. They take in sunlight through their leaves. They get water from their roots. They take carbon dioxide from the air. Using these three things, they make sugar for energy. This process is called photosynthesis.</Text>
+      </Card>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="middle">
+    <Accordion.Control>
+      <Group>
+        <Badge color="green">Grades 6-8</Badge>
+        <Text size="sm">Flesch-Kincaid ~7.0</Text>
+      </Group>
+    </Accordion.Control>
+    <Accordion.Panel>
+      <Card withBorder p="md">
+        <Text>During photosynthesis, plants convert sunlight, water, and carbon dioxide into glucose and oxygen. Chlorophyll in the leaves absorbs light energy, which powers a chemical reaction that transforms these inputs into usable sugar. The plant uses this glucose for growth and energy, and releases oxygen as a byproduct.</Text>
+      </Card>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="high">
+    <Accordion.Control>
+      <Group>
+        <Badge color="violet">Grades 9-12</Badge>
+        <Text size="sm">Flesch-Kincaid ~10.0</Text>
+      </Group>
+    </Accordion.Control>
+    <Accordion.Panel>
+      <Card withBorder p="md">
+        <Text>Photosynthesis is a two-stage metabolic process occurring in the chloroplasts of plant cells. In the light-dependent reactions, chlorophyll pigments absorb photons, generating ATP and NADPH through the electron transport chain. These energy carriers then drive the Calvin cycle, in which carbon dioxide is fixed into glyceraldehyde-3-phosphate (G3P), a precursor to glucose and other organic molecules essential for cellular metabolism.</Text>
+      </Card>
+    </Accordion.Panel>
+  </Accordion.Item>
+</Accordion>
+
+## Maintaining Appropriate Tone
+
+Tone shapes how students experience your materials. The right tone builds trust and engagement; the wrong tone creates distance or frustration.
+
+### The Target: Authoritative but Approachable
+
+Effective educational materials strike a balance:
+
+| Too Formal | Just Right | Too Casual |
+|-----------|-----------|-----------|
+| "One must consider the implications of the data presented herein." | "Look at the data in the table. What patterns do you notice?" | "OK so check out this data, it's pretty wild!" |
+| "It is incumbent upon the student to complete all assigned tasks." | "Complete all three tasks before moving to the next section." | "Make sure you do all the stuff before you move on, yeah?" |
+| "The aforementioned principles shall guide the learner's inquiry." | "Use these three principles to guide your research." | "Here are some handy tips to keep in mind, no biggie." |
+
+### Tone Guidelines
+
+- **Be direct.** Say what you mean in the fewest words necessary.
+- **Be respectful.** Write to students as capable people, not as children who need constant encouragement.
+- **Be consistent.** Pick a tone and maintain it throughout the document.
+- **Avoid false enthusiasm.** Phrases like "This exciting project!" or "You're going to love this!" can feel patronizing. Let the content speak for itself.
+- **Use "you" for students, "we" sparingly.** "You" is clear and direct. "We" can be useful for building community but can also be vague about who is responsible.
+
+## AI Prompts for Adjusting Reading Level
+
+### Lower the Reading Level
+
+```
+Rewrite the following text for a [grade level] reading level.
+Use shorter sentences, simpler vocabulary, and active voice.
+Keep all the key information and technical terms that students need to learn,
+but define those terms in context.
+Target Flesch-Kincaid grade level: [number].
+
+[paste your text]
+```
+
+### Raise the Reading Level
+
+```
+Rewrite the following text at a [grade level] reading level.
+Introduce appropriate academic vocabulary, use more complex sentence structures,
+and reduce scaffolding. Assume students have background knowledge of [topics].
+
+[paste your text]
+```
+
+### Check and Adjust Tone
+
+```
+Review the following educational material for tone consistency.
+The target tone is: [authoritative but approachable / warm and encouraging / professional and direct].
+The audience is: [grade level] students.
+Flag any sections where the tone shifts or feels inconsistent,
+and rewrite those sections to match the target tone.
+
+[paste your text]
+```
+
+### Create Multiple Reading Level Versions
+
+```
+I need this content at three reading levels for differentiation.
+Create versions for:
+1. Below grade level (Flesch-Kincaid [X])
+2. On grade level (Flesch-Kincaid [Y])
+3. Above grade level (Flesch-Kincaid [Z])
+
+Keep the same core content and learning goals in all three versions.
+
+[paste your text]
+```
+
+## Tools for Checking Reading Level
+
+| Tool | Cost | Measures | Best For |
+|------|------|----------|----------|
+| Microsoft Word (built-in) | Included with Office | Flesch-Kincaid, Flesch Reading Ease | Quick checks during writing |
+| Hemingway Editor (hemingwayapp.com) | Free (web) / Paid (desktop) | Grade level, sentence complexity, passive voice | Editing for clarity and simplicity |
+| Readable (readable.com) | Free tier / Paid plans | Multiple formulas, Lexile estimate | Comprehensive analysis |
+| Lexile Analyzer (hub.lexile.com) | Free for short texts | Lexile measure | Matching text to student Lexile levels |
+| TextCompare (various) | Free | Side-by-side comparison | Comparing original vs. revised versions |
+| AI chatbots (ChatGPT, Claude) | Varies | Estimate grade level on request | Quick estimate plus revision in one step |
+
+<Alert variant="light" color="yellow" title="No tool replaces human judgment" my="md">
+  Readability scores are approximations. A text can score at grade 6 and still be confusing to a sixth grader if the concepts are unfamiliar or the organization is poor. Always combine tool-based measurement with a real reading of the material.
+</Alert>

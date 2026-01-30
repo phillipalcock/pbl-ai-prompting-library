@@ -1,0 +1,169 @@
+import { Callout } from '../../components/Callout'
+import { Table, Card, Text, Stack, Accordion } from '@mantine/core'
+
+# Summative Assessment Design
+
+Summative assessments measure what students have learned at the end of an instructional unit, course, or program. They answer the question: *Did students meet the learning objectives?*
+
+<Callout type="info" title="Design principle">
+Start with the learning objectives, not the assessment format. The objectives determine what you measure; the format is simply the vehicle for measurement.
+</Callout>
+
+## Types of Summative Assessments
+
+<Table striped highlightOnHover withTableBorder withColumnBorders my="md">
+  <Table.Thead>
+    <Table.Tr>
+      <Table.Th>Type</Table.Th>
+      <Table.Th>Description</Table.Th>
+      <Table.Th>Best For</Table.Th>
+    </Table.Tr>
+  </Table.Thead>
+  <Table.Tbody>
+    <Table.Tr>
+      <Table.Td><strong>Traditional tests</strong></Table.Td>
+      <Table.Td>Multiple choice, short answer, and essay questions</Table.Td>
+      <Table.Td>Measuring knowledge recall, comprehension, and analysis at scale</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Projects</strong></Table.Td>
+      <Table.Td>Extended tasks where students create a product or solve a problem</Table.Td>
+      <Table.Td>Assessing application, synthesis, and creativity</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Portfolios</strong></Table.Td>
+      <Table.Td>Curated collections of student work over time</Table.Td>
+      <Table.Td>Demonstrating growth, reflection, and breadth of learning</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Performances</strong></Table.Td>
+      <Table.Td>Presentations, debates, demonstrations, or exhibitions</Table.Td>
+      <Table.Td>Assessing communication, reasoning, and real-time thinking</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Performance tasks</strong></Table.Td>
+      <Table.Td>Scenario-based tasks requiring students to apply learning to new contexts</Table.Td>
+      <Table.Td>Measuring transfer and deeper understanding</Table.Td>
+    </Table.Tr>
+  </Table.Tbody>
+</Table>
+
+## Backward Design for Assessments
+
+Effective summative assessments are designed before instruction begins. This backward design approach ensures alignment between what you teach and what you assess.
+
+<Accordion variant="separated" my="md">
+  <Accordion.Item value="step-1">
+    <Accordion.Control>Step 1: Identify desired results</Accordion.Control>
+    <Accordion.Panel>
+      <Text>Start with your learning objectives and standards. What should students know and be able to do by the end of the unit? List the specific, measurable outcomes you expect.</Text>
+    </Accordion.Panel>
+  </Accordion.Item>
+  <Accordion.Item value="step-2">
+    <Accordion.Control>Step 2: Determine acceptable evidence</Accordion.Control>
+    <Accordion.Panel>
+      <Text>What would convince you that students have met each objective? Define the types of evidence you need — this becomes your assessment. Consider whether you need selected-response items, constructed-response items, or performance tasks.</Text>
+    </Accordion.Panel>
+  </Accordion.Item>
+  <Accordion.Item value="step-3">
+    <Accordion.Control>Step 3: Design the assessment</Accordion.Control>
+    <Accordion.Panel>
+      <Text>Build the assessment instrument. Write items and tasks that directly measure the objectives. Create a rubric or scoring guide. Ensure the cognitive demand of the assessment matches the cognitive demand of the objective.</Text>
+    </Accordion.Panel>
+  </Accordion.Item>
+  <Accordion.Item value="step-4">
+    <Accordion.Control>Step 4: Review for alignment</Accordion.Control>
+    <Accordion.Panel>
+      <Text>Map every assessment item back to a specific objective. If an item does not clearly connect to an objective, revise or remove it. If an objective has no corresponding item, add one. This alignment check is essential.</Text>
+    </Accordion.Panel>
+  </Accordion.Item>
+</Accordion>
+
+## Aligning Assessments to Standards and Objectives
+
+Every summative assessment item should map to a specific standard or objective. Use an alignment table to verify coverage:
+
+<Table striped highlightOnHover withTableBorder withColumnBorders my="md">
+  <Table.Thead>
+    <Table.Tr>
+      <Table.Th>Objective</Table.Th>
+      <Table.Th>DOK Level</Table.Th>
+      <Table.Th>Assessment Item(s)</Table.Th>
+      <Table.Th>Format</Table.Th>
+    </Table.Tr>
+  </Table.Thead>
+  <Table.Tbody>
+    <Table.Tr>
+      <Table.Td>Explain causes of the Civil War</Table.Td>
+      <Table.Td>DOK 2</Table.Td>
+      <Table.Td>Items 1-3</Table.Td>
+      <Table.Td>Multiple choice</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Analyze primary source documents</Table.Td>
+      <Table.Td>DOK 3</Table.Td>
+      <Table.Td>Items 4-5</Table.Td>
+      <Table.Td>Short answer</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Evaluate competing historical interpretations</Table.Td>
+      <Table.Td>DOK 4</Table.Td>
+      <Table.Td>Item 6</Table.Td>
+      <Table.Td>Extended response essay</Table.Td>
+    </Table.Tr>
+  </Table.Tbody>
+</Table>
+
+## AI Prompts for Summative Assessment Design
+
+### Generate an Assessment Framework
+
+```
+I am designing a summative assessment for a [grade level] [subject] unit on [topic].
+
+The learning objectives are:
+1. [Objective 1]
+2. [Objective 2]
+3. [Objective 3]
+
+For each objective, recommend:
+- The best assessment format (selected-response, constructed-response, or performance task)
+- The appropriate Depth of Knowledge level
+- A brief description of what the item or task should ask students to do
+
+Ensure the overall assessment covers all objectives and includes a mix of question types.
+```
+
+### Design a Performance Task
+
+```
+Create a performance task for [grade level] students that assesses the following objective:
+[paste objective]
+
+The task should:
+- Present a realistic scenario or problem
+- Require students to apply their learning to a new context
+- Include clear directions and constraints
+- Be completable in [time frame]
+- Include a scoring rubric with 4 performance levels
+
+Format the task as it would appear on a student handout.
+```
+
+### Build an Assessment Blueprint
+
+```
+Create an assessment blueprint for a [number]-question [subject] unit test.
+
+Standards to assess:
+[list standards]
+
+For each standard, specify:
+- Number of items
+- Item format (multiple choice, short answer, extended response)
+- DOK level
+- Point value
+
+Ensure the blueprint balances coverage across all standards
+and includes items at multiple DOK levels.
+```

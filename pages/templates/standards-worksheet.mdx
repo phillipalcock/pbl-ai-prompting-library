@@ -1,0 +1,101 @@
+import { TemplateCard } from '../../components/TemplateCard'
+import { Callout } from '../../components/Callout'
+import { Table, Accordion, Card, Text, Stack } from '@mantine/core'
+
+# Standards Unpacking Worksheet
+
+<TemplateCard
+  title="Standards Unpacking Worksheet"
+  description="A step-by-step worksheet for deconstructing curriculum standards into their component knowledge, skills, and cognitive demands to inform instructional planning."
+  badge="Worksheet"
+  downloadHref="/templates/standards-unpacking-worksheet.pdf"
+>
+  <Text size="sm" c="dimmed">Use when beginning unit or lesson planning</Text>
+</TemplateCard>
+
+## What's Included
+
+The worksheet guides you through unpacking each curriculum standard into actionable components:
+
+### Step 1: Standard Deconstruction
+Break down the standard into its component parts:
+- **Knowledge** — What content knowledge is required?
+- **Skills** — What processes, procedures, or abilities are described?
+- **Cognitive Demand** — What level of thinking is expected?
+- **Context Clues** — What applications or situations are implied?
+
+### Step 2: Component Mapping
+Organize the deconstructed elements into planning categories:
+
+<Table striped highlightOnHover withTableBorder withColumnBorders my="md">
+  <Table.Thead>
+    <Table.Tr>
+      <Table.Th>Component</Table.Th>
+      <Table.Th>Question to Ask</Table.Th>
+      <Table.Th>Where to Look in the Standard</Table.Th>
+    </Table.Tr>
+  </Table.Thead>
+  <Table.Tbody>
+    <Table.Tr>
+      <Table.Td>Knowledge</Table.Td>
+      <Table.Td>What do students need to know?</Table.Td>
+      <Table.Td>Nouns and concepts in the standard</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Skills</Table.Td>
+      <Table.Td>What do students need to be able to do?</Table.Td>
+      <Table.Td>Verbs and procedures in the standard</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Cognitive Demand</Table.Td>
+      <Table.Td>What level of thinking is required?</Table.Td>
+      <Table.Td>Higher-order verbs (analyze, evaluate, synthesize, create)</Table.Td>
+    </Table.Tr>
+  </Table.Tbody>
+</Table>
+
+### Step 3: Objective Writing
+Transform each component into a measurable "Students will..." statement using appropriate action verbs.
+
+### Step 4: Alignment Verification
+Check that each objective:
+- Uses a measurable verb
+- Specifies observable student behavior
+- Connects clearly to the original standard
+- Can be assessed within your unit or lesson
+
+## Example Unpacking
+
+<Accordion variant="separated" my="md">
+  <Accordion.Item value="example">
+    <Accordion.Control>Example: NGSS MS-LS2-1</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="md">
+        <Text fw={600}>Original Standard:</Text>
+        <Text>"Analyze and interpret data to provide evidence for the effects of resource availability on organisms and populations of organisms in an ecosystem."</Text>
+
+        <Text fw={600}>Deconstructed:</Text>
+        <Text>Knowledge: resource availability, organisms, populations, ecosystems</Text>
+        <Text>Skills: analyze data, interpret data, provide evidence</Text>
+        <Text>Cognitive Demand: Analysis and evidence-based reasoning</Text>
+
+        <Text fw={600}>Learning Objectives:</Text>
+        <Text>**Knowledge:** Students will identify the key resources that affect organism populations in an ecosystem.</Text>
+        <Text>**Skills:** Students will analyze population and resource data from multiple sources to identify patterns and trends.</Text>
+        <Text>**Cognitive Demand:** Students will evaluate the relationship between resource availability and population health, constructing evidence-based explanations for observed patterns.</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+</Accordion>
+
+## How to Use
+
+1. Select the curriculum standards for your unit or lesson
+2. Deconstruct each standard into knowledge, skills, and cognitive demand
+3. Write measurable objectives for each component
+4. Verify alignment and assessability
+5. Use the resulting objectives to guide your unit planning and assessment design
+
+<Callout type="info" title="AI assistance">
+Use AI to generate initial objectives from your standards. Paste the standard text and ask the AI to identify the knowledge, skills, and cognitive demands, then draft measurable objectives. Review and refine the output using this worksheet as your guide.
+</Callout>

@@ -1,0 +1,139 @@
+import { Callout } from '../../components/Callout'
+import { Table } from '@mantine/core'
+
+# Unpacking Standards
+
+"Unpacking" a standard means breaking it down into its component parts — the specific knowledge, skills, and cognitive demands that students must demonstrate. This is the critical first step before writing objectives, designing assessments, or planning instruction.
+
+## What Does "Unpacking" Mean?
+
+A curriculum standard is a compressed statement. It packs multiple expectations into a single sentence. Unpacking is the process of identifying:
+
+- **Knowledge** — The facts, concepts, and vocabulary students need to know
+- **Skills** — The actions or processes students need to perform
+- **Cognitive demand** — The level of thinking required (recall, application, analysis, etc.)
+- **Context** — The conditions or situations in which students should demonstrate understanding
+
+Until you unpack a standard, you cannot write precise objectives or design assessments that actually measure what the standard requires.
+
+## Step-by-Step Process
+
+### 1. Read the full standard carefully
+
+Read the standard at least twice. Identify every verb (these signal skills) and every noun or noun phrase (these signal knowledge).
+
+### 2. Circle the verbs
+
+The verbs tell you what students must *do*. A single standard often contains multiple verbs at different cognitive levels.
+
+### 3. Underline the nouns
+
+The nouns and noun phrases tell you what students must *know* — the content, concepts, and vocabulary.
+
+### 4. Identify the cognitive level
+
+Map each verb to a level of Bloom's Taxonomy or Webb's Depth of Knowledge. This tells you how deeply students need to engage with the content.
+
+### 5. Note any conditions or contexts
+
+Some standards specify conditions ("using evidence from the text," "in a collaborative setting"). These constrain how students demonstrate mastery.
+
+### 6. List the components
+
+Write out each knowledge element, skill, and cognitive demand separately. This is your unpacked standard.
+
+## Example: Unpacking an NGSS Standard
+
+**Standard:** NGSS MS-LS2-4 — *Construct an argument supported by empirical evidence that changes to physical or biological components of an ecosystem affect populations.*
+
+<Table striped highlightOnHover withTableBorder withColumnBorders my="md">
+  <Table.Thead>
+    <Table.Tr>
+      <Table.Th>Component</Table.Th>
+      <Table.Th>What It Includes</Table.Th>
+    </Table.Tr>
+  </Table.Thead>
+  <Table.Tbody>
+    <Table.Tr>
+      <Table.Td>**Skills (verbs)**</Table.Td>
+      <Table.Td>Construct an argument; support with evidence</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>**Knowledge (nouns)**</Table.Td>
+      <Table.Td>Empirical evidence; physical components of ecosystems; biological components of ecosystems; populations</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>**Cognitive demand**</Table.Td>
+      <Table.Td>Bloom's: Evaluate/Create (constructing arguments). DOK: Level 3 (strategic thinking — requires reasoning with evidence)</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>**Context/Conditions**</Table.Td>
+      <Table.Td>Evidence must be empirical (not anecdotal); argument must connect changes to population effects</Table.Td>
+    </Table.Tr>
+  </Table.Tbody>
+</Table>
+
+From this single standard, you can now derive multiple learning objectives — one for the argumentation skill, one for the content knowledge about ecosystem components, and one for the evidence-analysis skill.
+
+## AI Prompt Templates for Unpacking Standards
+
+### Prompt 1: Full Standard Deconstruction
+
+```
+I need to unpack the following curriculum standard into its component parts.
+
+Standard: [paste the full standard text here]
+Standard code: [e.g., NGSS MS-LS2-4]
+
+Please identify:
+1. All skills (verbs) students must demonstrate
+2. All knowledge (nouns/concepts) students must understand
+3. The cognitive demand level (Bloom's Taxonomy and Webb's DOK)
+4. Any conditions or contexts specified in the standard
+5. Prerequisite knowledge or skills students will need
+
+Format the output as a structured table.
+```
+
+### Prompt 2: Batch Unpacking for a Unit
+
+```
+I am planning a unit and need to unpack multiple standards. For each standard below, identify the key skills, knowledge components, cognitive demand level, and any specified conditions.
+
+Standards:
+1. [paste standard 1]
+2. [paste standard 2]
+3. [paste standard 3]
+
+After unpacking each standard individually, identify:
+- Overlapping skills across standards (opportunities for integrated instruction)
+- Overlapping knowledge across standards
+- The range of cognitive demand levels required
+- A suggested sequence for instruction based on prerequisite relationships
+```
+
+### Prompt 3: Cross-Standard Skill Mapping
+
+```
+I have unpacked the following standards for my unit. Now I need to identify which skills appear across multiple standards so I can plan instruction efficiently.
+
+[Paste your unpacked standards or the raw standard text]
+
+Please create a skill-by-standard matrix showing which skills are required by which standards. Highlight skills that appear in 2 or more standards — these are priority instructional targets.
+```
+
+## Common Pitfalls
+
+<Callout type="warning" title="Watch out for these mistakes">
+**Treating the standard as a single objective.** A standard is not a learning objective. Most standards contain multiple objectives worth of content. If your "unpacking" produces a single objective, you have not gone deep enough.
+
+**Ignoring implicit skills.** The standard "Construct an argument supported by empirical evidence" implicitly requires that students can evaluate evidence quality, organize claims logically, and distinguish evidence from opinion. AI tools are particularly good at surfacing these hidden prerequisites.
+
+**Misreading the cognitive level.** The verb "identify" in a standard like "identify the pattern" operates at a different cognitive level than "identify" in "identify the best solution." Context matters. Do not rely on verb lists alone.
+
+**Skipping the conditions.** Phrases like "using mathematical representations" or "from informational texts" are not decoration — they constrain what counts as meeting the standard.
+</Callout>
+
+<Callout type="info" title="AI tip">
+When using AI to unpack standards, always provide the full standard text including the standard code. Many AI models have knowledge of curriculum frameworks and can provide additional context about the standard's intent, related standards, and common instructional approaches.
+</Callout>

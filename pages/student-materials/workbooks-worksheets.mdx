@@ -1,0 +1,190 @@
+import { Callout } from '../../components/Callout'
+import { Table, Card, Text, Stack, List } from '@mantine/core'
+
+# Workbook & Worksheet Creation
+
+Student-facing documents are the primary interface between your lesson design and your students' experience. This page covers how to structure, design, and generate workbooks, worksheets, packets, and study guides.
+
+## Types of Student-Facing Documents
+
+<Table striped highlightOnHover withTableBorder withColumnBorders my="md">
+  <Table.Thead>
+    <Table.Tr>
+      <Table.Th>Document Type</Table.Th>
+      <Table.Th>Purpose</Table.Th>
+      <Table.Th>Typical Length</Table.Th>
+    </Table.Tr>
+  </Table.Thead>
+  <Table.Tbody>
+    <Table.Tr>
+      <Table.Td><strong>Workbook</strong></Table.Td>
+      <Table.Td>Guides students through a multi-day project or unit with sequenced activities</Table.Td>
+      <Table.Td>10-20 pages</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Worksheet</strong></Table.Td>
+      <Table.Td>Supports a single lesson or skill with focused practice or application</Table.Td>
+      <Table.Td>1-2 pages</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Packet</strong></Table.Td>
+      <Table.Td>Bundles related worksheets or readings for a short sequence of lessons</Table.Td>
+      <Table.Td>3-8 pages</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Study Guide</strong></Table.Td>
+      <Table.Td>Summarizes key concepts and provides review activities before an assessment</Table.Td>
+      <Table.Td>2-4 pages</Table.Td>
+    </Table.Tr>
+  </Table.Tbody>
+</Table>
+
+## Structuring Multi-Page Workbooks
+
+A workbook tells a story — it moves students from introduction through investigation to synthesis. Organize pages in a logical sequence that mirrors how students will experience the work.
+
+### Recommended Workbook Flow
+
+1. **Opening pages** — Cover, overview, goals, and timeline
+2. **Input pages** — Background reading, vocabulary, and key concepts
+3. **Activity pages** — Guided tasks, investigations, and data collection
+4. **Synthesis pages** — Analysis, drafting, and product creation
+5. **Closing pages** — Reflection, self-assessment, and presentation prep
+
+<Callout type="info" title="Scope each page deliberately">
+Every page should serve a clear purpose. If you cannot state in one sentence what a page asks students to do, it needs to be simplified or split.
+</Callout>
+
+## Page Types
+
+Each page in a workbook or packet falls into one of four categories. Understanding these categories helps you design pages that function well.
+
+### Instructional Pages
+
+Provide information students need. Keep text concise and use visuals to support understanding.
+
+- Maximum 200 words of instruction per page
+- Use numbered steps for procedures
+- Include visual examples where possible
+
+### Activity Pages
+
+Guide students through specific tasks. Structure is critical — students should know exactly what to do.
+
+- Clear task header stating the goal
+- Step-by-step instructions
+- Designated response areas with enough space
+- Estimated time for completion
+
+### Data and Evidence Pages
+
+Provide templates for collecting and organizing information.
+
+- Pre-formatted tables or graphic organizers
+- Column headers already filled in
+- Example entries to show expected format
+- Space for source citations
+
+### Reflection Pages
+
+Prompt students to think about their learning process.
+
+- Open-ended questions (not yes/no)
+- Sentence starters for struggling writers
+- Connection to specific learning goals
+- Space for both individual and team reflection
+
+## Design Principles for Student Materials
+
+<Table striped highlightOnHover withTableBorder withColumnBorders my="md">
+  <Table.Thead>
+    <Table.Tr>
+      <Table.Th>Principle</Table.Th>
+      <Table.Th>What It Means</Table.Th>
+      <Table.Th>Common Mistake</Table.Th>
+    </Table.Tr>
+  </Table.Thead>
+  <Table.Tbody>
+    <Table.Tr>
+      <Table.Td><strong>Clarity first</strong></Table.Td>
+      <Table.Td>Students should understand what to do without asking for help</Table.Td>
+      <Table.Td>Ambiguous instructions that require teacher interpretation</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Intentional white space</strong></Table.Td>
+      <Table.Td>Leave room for students to write, draw, and think</Table.Td>
+      <Table.Td>Filling every inch of the page with text</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Visual hierarchy</strong></Table.Td>
+      <Table.Td>Use headings, numbering, and formatting to guide the eye</Table.Td>
+      <Table.Td>Uniform text with no structural cues</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Goal alignment</strong></Table.Td>
+      <Table.Td>Every page connects to at least one learning objective</Table.Td>
+      <Table.Td>Pages that feel busy but don't advance learning</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td><strong>Consistent formatting</strong></Table.Td>
+      <Table.Td>Same fonts, spacing, and layout patterns across the document</Table.Td>
+      <Table.Td>Each page looks like it was designed separately</Table.Td>
+    </Table.Tr>
+  </Table.Tbody>
+</Table>
+
+## AI Prompts for Generating Workbook and Worksheet Content
+
+### Generate a Full Workbook Page
+
+```
+Generate content for a student workbook page.
+
+Topic: [topic or unit]
+Page purpose: [describe what this page should accomplish]
+Page type: [instructional / activity / data collection / reflection]
+Grade level: [grade]
+Reading level: [target reading level]
+
+Write in direct, student-facing language using "you" and "your."
+Include clear instructions and designated spaces for student responses.
+Keep instructions under 200 words.
+```
+
+### Generate a Single Worksheet
+
+```
+Create a one-page student worksheet for the following lesson:
+
+Subject: [subject]
+Lesson topic: [topic]
+Learning objective: [what students should be able to do after completing this]
+Grade level: [grade]
+
+The worksheet should include:
+- A brief introduction (2-3 sentences) explaining the task
+- Clear, numbered instructions
+- Space for student responses (describe the format: lined space, table, diagram, etc.)
+- A closing question that asks students to explain their thinking
+
+Use direct, student-facing language. Write at a [grade]-level reading level.
+```
+
+### Generate a Study Guide
+
+```
+Create a student study guide for the following unit:
+
+Subject: [subject]
+Unit: [unit title]
+Key concepts: [list 4-6 concepts]
+Grade level: [grade]
+
+Include:
+- A summary section for each concept (2-3 sentences each)
+- A vocabulary review with definitions in student-friendly language
+- 3-5 practice questions that mirror the assessment format
+- A self-check section where students rate their confidence on each concept
+
+Write in second person ("you"). Keep language clear and direct.
+```
