@@ -1,0 +1,218 @@
+import { TemplateCard } from '../../components/TemplateCard'
+import { Callout } from '../../components/Callout'
+import { Table, Accordion, Card, Text, Stack } from '@mantine/core'
+
+# 18-Page Workbook Structure
+
+<TemplateCard
+  title="18-Page Workbook Structure Template"
+  description="The complete framework for building a student-facing PBL workbook. Includes page-by-page descriptions, content specifications, and layout guidance."
+  badge="Reference Guide"
+  downloadHref="/templates/workbook-structure-template.pdf"
+>
+  <Text size="sm" c="dimmed">Use alongside Module 7: Workbook Creation</Text>
+</TemplateCard>
+
+## Complete Page Descriptions
+
+<Accordion variant="separated" my="md">
+  <Accordion.Item value="page-1">
+    <Accordion.Control>Page 1: Cover Page</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="sm">
+        <Text fw={600}>Purpose:</Text>
+        <Text>Establishes the mission identity and creates a professional first impression.</Text>
+        <Text fw={600}>Contents:</Text>
+        <Text>Mission title, team name field, team member names, subject and grade level, date range, school name, cover illustration.</Text>
+        <Text fw={600}>Design notes:</Text>
+        <Text>Use a full-page layout. The cover illustration should reflect the mission context. Leave space for students to write their team name and member names.</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="page-2">
+    <Accordion.Control>Page 2: Mission Brief</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="sm">
+        <Text fw={600}>Purpose:</Text>
+        <Text>Introduces the driving question, context scenario, and project overview.</Text>
+        <Text fw={600}>Contents:</Text>
+        <Text>Driving question (prominently displayed), context scenario (3-5 sentences), mission overview (what students will do and create), stakeholder audience description.</Text>
+        <Text fw={600}>Design notes:</Text>
+        <Text>The driving question should be the most prominent text element. Use a callout box or special formatting so students can easily find it throughout the project.</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="page-3">
+    <Accordion.Control>Page 3: Learning Goals</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="sm">
+        <Text fw={600}>Purpose:</Text>
+        <Text>Shows students what they will learn and be able to do by the end of the mission.</Text>
+        <Text fw={600}>Contents:</Text>
+        <Text>Learning objectives organized by the four tiers: Content Knowledge, Skills and Processes, Critical Thinking, Communication and Collaboration.</Text>
+        <Text fw={600}>Design notes:</Text>
+        <Text>Use student-facing language ("You will..."). Include checkboxes so students can track their own progress. Keep to 2-3 goals per tier.</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="page-4">
+    <Accordion.Control>Page 4: Team Roles</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="sm">
+        <Text fw={600}>Purpose:</Text>
+        <Text>Defines each team role and helps students understand their responsibilities.</Text>
+        <Text fw={600}>Contents:</Text>
+        <Text>4-5 role descriptions (title, purpose, key responsibilities, deliverables), role assignment space, team agreement section.</Text>
+        <Text fw={600}>Design notes:</Text>
+        <Text>Use equal-sized sections for each role. Include a "Team Agreement" at the bottom where students sign their commitment to their role.</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="page-5">
+    <Accordion.Control>Page 5: Project Timeline</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="sm">
+        <Text fw={600}>Purpose:</Text>
+        <Text>Provides a visual schedule with checkpoints and deadlines.</Text>
+        <Text fw={600}>Contents:</Text>
+        <Text>Week-by-week or day-by-day schedule, checkpoint dates with deliverables, final presentation date, key milestones.</Text>
+        <Text fw={600}>Design notes:</Text>
+        <Text>Use a table or calendar format. Highlight checkpoint dates. Leave space for teams to add their own deadlines and notes.</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="page-6">
+    <Accordion.Control>Page 6: Research Guide</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="sm">
+        <Text fw={600}>Purpose:</Text>
+        <Text>Guides students through the research process with source requirements and note-taking structure.</Text>
+        <Text fw={600}>Contents:</Text>
+        <Text>Research questions (3-5 focused questions), source requirements (minimum number and types), note-taking template, source citation format.</Text>
+        <Text fw={600}>Design notes:</Text>
+        <Text>Include a structured note-taking table with columns for source, key finding, how it relates to the driving question, and reliability assessment.</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="page-78">
+    <Accordion.Control>Pages 7-8: Investigation Pages</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="sm">
+        <Text fw={600}>Purpose:</Text>
+        <Text>Guide students through specific inquiry activities related to the driving question.</Text>
+        <Text fw={600}>Contents:</Text>
+        <Text>Guided inquiry prompts, observation or experiment protocols, data recording spaces, analysis questions.</Text>
+        <Text fw={600}>Design notes:</Text>
+        <Text>Provide clear step-by-step instructions. Include designated spaces for recording observations and initial analysis. These pages should feel like a guided lab or field investigation.</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="page-910">
+    <Accordion.Control>Pages 9-10: Data Collection</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="sm">
+        <Text fw={600}>Purpose:</Text>
+        <Text>Provide templates for gathering and organizing evidence.</Text>
+        <Text fw={600}>Contents:</Text>
+        <Text>Pre-formatted data tables, survey templates, interview protocols, observation logs, sample entries showing expected format.</Text>
+        <Text fw={600}>Design notes:</Text>
+        <Text>Pre-fill column headers and provide one example row. Include space for at least 10-15 data entries. Add a "Data Quality Check" prompt at the bottom.</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="page-1112">
+    <Accordion.Control>Pages 11-12: Analysis Pages</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="sm">
+        <Text fw={600}>Purpose:</Text>
+        <Text>Help students interpret their findings and draw conclusions.</Text>
+        <Text fw={600}>Contents:</Text>
+        <Text>Analysis frameworks (comparison charts, cause-effect diagrams), guiding questions for interpretation, space for preliminary conclusions, connection back to driving question.</Text>
+        <Text fw={600}>Design notes:</Text>
+        <Text>Use graphic organizers appropriate to the type of analysis. Include sentence starters for students who need scaffolding. End with "How does this help answer our driving question?"</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="page-13">
+    <Accordion.Control>Page 13: Draft Planning</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="sm">
+        <Text fw={600}>Purpose:</Text>
+        <Text>Help students outline their final product before creating it.</Text>
+        <Text fw={600}>Contents:</Text>
+        <Text>Product outline template, key message identification, evidence selection (which data to include), audience consideration prompts, task delegation for team members.</Text>
+        <Text fw={600}>Design notes:</Text>
+        <Text>Structure this as a planning checklist with space for notes under each item. Include a "Who does what?" table for dividing final product responsibilities.</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="page-1415">
+    <Accordion.Control>Pages 14-15: Production Pages</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="sm">
+        <Text fw={600}>Purpose:</Text>
+        <Text>Provide workspace and guidance for creating the final deliverable.</Text>
+        <Text fw={600}>Contents:</Text>
+        <Text>Product-specific templates (report outline, presentation storyboard, poster layout grid), quality criteria reminders, draft space.</Text>
+        <Text fw={600}>Design notes:</Text>
+        <Text>Adapt these pages to the specific product type. For reports: section headers. For presentations: slide planning boxes. For posters: layout grid. Include the rubric criteria as a sidebar reference.</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="page-16">
+    <Accordion.Control>Page 16: Peer Review</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="sm">
+        <Text fw={600}>Purpose:</Text>
+        <Text>Structure the peer feedback process so it's specific and constructive.</Text>
+        <Text fw={600}>Contents:</Text>
+        <Text>Peer review protocol (steps for giving feedback), feedback form with criteria-specific prompts, space for recording feedback received, revision plan based on feedback.</Text>
+        <Text fw={600}>Design notes:</Text>
+        <Text>Use the rubric criteria as the basis for peer review questions. Include sentence starters like "One strength is..." and "One suggestion for improvement is..." to guide constructive feedback.</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="page-17">
+    <Accordion.Control>Page 17: Reflection</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="sm">
+        <Text fw={600}>Purpose:</Text>
+        <Text>Guide students through self-assessment of their learning and process.</Text>
+        <Text fw={600}>Contents:</Text>
+        <Text>Learning goal self-assessment (rate yourself on each goal), process reflection questions, role performance reflection, team collaboration assessment, "What I would do differently" prompt.</Text>
+        <Text fw={600}>Design notes:</Text>
+        <Text>Connect each reflection prompt to a specific learning goal or project element. Use a mix of rating scales and open-ended questions. Include space for both individual and team reflection.</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+
+  <Accordion.Item value="page-18">
+    <Accordion.Control>Page 18: Presentation Guide</Accordion.Control>
+    <Accordion.Panel>
+      <Stack gap="sm">
+        <Text fw={600}>Purpose:</Text>
+        <Text>Prepare students for their public presentation to the stakeholder audience.</Text>
+        <Text fw={600}>Contents:</Text>
+        <Text>Presentation structure (opening, body, conclusion), speaking role assignments, audience Q&A preparation, professional presentation tips, dress code or logistics reminders.</Text>
+        <Text fw={600}>Design notes:</Text>
+        <Text>Include a "Presentation Checklist" students can use to verify they're prepared. Add space for practicing answers to likely audience questions. Keep the tone encouraging but professional.</Text>
+      </Stack>
+    </Accordion.Panel>
+  </Accordion.Item>
+</Accordion>
+
+<Callout type="success" title="Usage tip">
+Don't try to create all 18 pages at once. Work through them in order, using AI to draft each page and then reviewing against the criteria in Module 9: Writing & Editing.
+</Callout>
