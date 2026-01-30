@@ -1,15 +1,18 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
+  "index": {
+    "title": "Home",
     "type": "page"
   },
-  "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
-  }
+  "getting-started": "Getting Started",
+  "foundations": "Foundations",
+  "mission-design": "Mission Design",
+  "learning-goals": "Learning Goals",
+  "assessment": "Assessment",
+  "student-roles": "Student Roles",
+  "workbook-creation": "Workbook Creation",
+  "visual-design": "Visual Design",
+  "writing-editing": "Writing & Editing",
+  "equity-access": "Equity & Access",
+  "templates": "Templates",
+  "examples": "Examples"
 }

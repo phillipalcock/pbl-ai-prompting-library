@@ -1,0 +1,276 @@
+import { ExampleCard } from '../../components/ExampleCard'
+import { Callout } from '../../components/Callout'
+import { Accordion, Table, Card, Text, Stack, List, Badge, Group, Tabs } from '@mantine/core'
+
+# Environmental Impact Study
+
+<ExampleCard
+  title="Clean Water Initiative"
+  subject="Science (NGSS)"
+  gradeLevel="Grade 7"
+  drivingQuestion="What is the impact of local land use on our watershed's water quality, and what should the city environmental board recommend to protect it?"
+>
+  <Group gap="xs" mt="xs">
+    <Badge color="gray" variant="light">3 Weeks</Badge>
+    <Badge color="gray" variant="light">4 Student Roles</Badge>
+    <Badge color="gray" variant="light">Panel Presentation</Badge>
+  </Group>
+</ExampleCard>
+
+## Mission Overview
+
+Students investigate water quality in their local watershed by collecting and analyzing data from multiple sites. They research how different land uses (residential, agricultural, industrial, recreational) affect water quality and present evidence-based recommendations to a panel acting as the city environmental board.
+
+<Tabs defaultValue="goals" my="md">
+  <Tabs.List>
+    <Tabs.Tab value="goals">Learning Goals</Tabs.Tab>
+    <Tabs.Tab value="roles">Student Roles</Tabs.Tab>
+    <Tabs.Tab value="assessment">Assessment</Tabs.Tab>
+    <Tabs.Tab value="workbook">Workbook Preview</Tabs.Tab>
+  </Tabs.List>
+
+  <Tabs.Panel value="goals" pt="md">
+    ### Four-Tier Learning Goals
+
+    **Tier 1: Content Knowledge**
+    - Students will identify the key pollutants that affect freshwater ecosystems and their sources.
+    - Students will explain how nutrient levels, pH, dissolved oxygen, and turbidity indicate water health.
+    - Students will describe how different land uses contribute to watershed pollution.
+
+    **Tier 2: Skills and Processes**
+    - Students will collect water quality data using standardized testing protocols.
+    - Students will analyze data sets to identify patterns across sampling sites.
+    - Students will create data visualizations (charts, graphs, maps) that communicate findings.
+
+    **Tier 3: Critical Thinking**
+    - Students will evaluate the relationship between land use patterns and water quality indicators.
+    - Students will construct evidence-based arguments about which land uses pose the greatest risk.
+    - Students will propose mitigation strategies supported by their data and research.
+
+    **Tier 4: Communication and Collaboration**
+    - Students will present findings to a panel using professional data visualizations.
+    - Students will write a technical summary accessible to non-scientist community members.
+    - Students will collaborate effectively within assigned roles to produce a cohesive final product.
+  </Tabs.Panel>
+
+  <Tabs.Panel value="roles" pt="md">
+    ### Student Roles
+
+    <Accordion variant="separated">
+      <Accordion.Item value="researcher">
+        <Accordion.Control>
+          <Group>
+            <Badge color="blue">Lead Researcher</Badge>
+            <Text size="sm">Environmental Scientist</Text>
+          </Group>
+        </Accordion.Control>
+        <Accordion.Panel>
+          <Stack gap="xs">
+            <Text fw={600}>Purpose:</Text>
+            <Text>Leads data collection and ensures scientific accuracy of all findings.</Text>
+            <Text fw={600}>Key Responsibilities:</Text>
+            <List>
+              <List.Item>Design and oversee water quality testing protocols</List.Item>
+              <List.Item>Ensure proper sample collection at each site</List.Item>
+              <List.Item>Verify data accuracy and flag anomalies</List.Item>
+              <List.Item>Write the methodology section of the final report</List.Item>
+            </List>
+            <Text fw={600}>Deliverables:</Text>
+            <Text>Testing protocol document, completed data collection spreadsheet, methodology write-up</Text>
+          </Stack>
+        </Accordion.Panel>
+      </Accordion.Item>
+
+      <Accordion.Item value="analyst">
+        <Accordion.Control>
+          <Group>
+            <Badge color="green">Data Analyst</Badge>
+            <Text size="sm">Statistician</Text>
+          </Group>
+        </Accordion.Control>
+        <Accordion.Panel>
+          <Stack gap="xs">
+            <Text fw={600}>Purpose:</Text>
+            <Text>Transforms raw data into meaningful patterns and visualizations.</Text>
+            <Text fw={600}>Key Responsibilities:</Text>
+            <List>
+              <List.Item>Organize raw data into analysis-ready formats</List.Item>
+              <List.Item>Calculate statistical measures (mean, range, trends)</List.Item>
+              <List.Item>Create charts, graphs, and maps for the final presentation</List.Item>
+              <List.Item>Write the data analysis section of the final report</List.Item>
+            </List>
+            <Text fw={600}>Deliverables:</Text>
+            <Text>Organized data tables, 4+ data visualizations, written analysis summary</Text>
+          </Stack>
+        </Accordion.Panel>
+      </Accordion.Item>
+
+      <Accordion.Item value="comms">
+        <Accordion.Control>
+          <Group>
+            <Badge color="orange">Communications Director</Badge>
+            <Text size="sm">Public Relations Officer</Text>
+          </Group>
+        </Accordion.Control>
+        <Accordion.Panel>
+          <Stack gap="xs">
+            <Text fw={600}>Purpose:</Text>
+            <Text>Ensures findings are communicated clearly to both technical and general audiences.</Text>
+            <Text fw={600}>Key Responsibilities:</Text>
+            <List>
+              <List.Item>Write the executive summary for the environmental board</List.Item>
+              <List.Item>Create the community-facing fact sheet</List.Item>
+              <List.Item>Design the presentation slide deck</List.Item>
+              <List.Item>Coordinate speaking roles for the panel presentation</List.Item>
+            </List>
+            <Text fw={600}>Deliverables:</Text>
+            <Text>Executive summary (500 words), community fact sheet, presentation slides</Text>
+          </Stack>
+        </Accordion.Panel>
+      </Accordion.Item>
+
+      <Accordion.Item value="liaison">
+        <Accordion.Control>
+          <Group>
+            <Badge color="violet">Community Liaison</Badge>
+            <Text size="sm">Outreach Coordinator</Text>
+          </Group>
+        </Accordion.Control>
+        <Accordion.Panel>
+          <Stack gap="xs">
+            <Text fw={600}>Purpose:</Text>
+            <Text>Connects the team's scientific work to community impact and stakeholder needs.</Text>
+            <Text fw={600}>Key Responsibilities:</Text>
+            <List>
+              <List.Item>Research existing community concerns about water quality</List.Item>
+              <List.Item>Conduct stakeholder interviews or surveys</List.Item>
+              <List.Item>Integrate community perspectives into the team's recommendations</List.Item>
+              <List.Item>Write the community impact section of the final report</List.Item>
+            </List>
+            <Text fw={600}>Deliverables:</Text>
+            <Text>Stakeholder interview summaries, community impact assessment, recommendation section</Text>
+          </Stack>
+        </Accordion.Panel>
+      </Accordion.Item>
+    </Accordion>
+  </Tabs.Panel>
+
+  <Tabs.Panel value="assessment" pt="md">
+    ### Assessment Strategy
+
+    **Checkpoints:**
+
+    | Checkpoint | Timing | Deliverable | Weight |
+    |-----------|--------|-------------|--------|
+    | Research Plan | End of Day 3 | Testing protocol + site map | 10% |
+    | Data Collection | End of Week 1 | Completed data spreadsheet | 15% |
+    | Analysis Draft | Mid Week 2 | Data visualizations + preliminary findings | 20% |
+    | Report Draft | End of Week 2 | Full draft for peer review | 15% |
+    | Final Presentation | End of Week 3 | Panel presentation + final report | 40% |
+
+    **Rubric Criteria (Final Product):**
+
+    | Criterion | Exceeds | Meets | Approaching | Beginning |
+    |-----------|---------|-------|-------------|-----------|
+    | Data Quality | Comprehensive data from all sites with quality controls | Complete data from all sites | Partial data or missing sites | Incomplete or unreliable data |
+    | Analysis | Identifies complex patterns with statistical support | Identifies key patterns with evidence | Identifies some patterns | Minimal analysis attempted |
+    | Argument | Nuanced recommendations with counterargument consideration | Clear recommendations supported by evidence | Recommendations present but weakly supported | Recommendations not evidence-based |
+    | Communication | Polished, audience-appropriate for multiple stakeholders | Clear and appropriate for the target audience | Understandable but not audience-tailored | Unclear or inappropriate for audience |
+    | Collaboration | Exceeds role expectations, supports teammates proactively | Fulfills all role responsibilities | Completes most role responsibilities | Does not fulfill role requirements |
+  </Tabs.Panel>
+
+  <Tabs.Panel value="workbook" pt="md">
+    ### Workbook Preview
+
+    Key pages from this mission's 18-page workbook:
+
+    <Accordion variant="contained">
+      <Accordion.Item value="brief">
+        <Accordion.Control>Page 2: Mission Brief</Accordion.Control>
+        <Accordion.Panel>
+          <Card withBorder p="md">
+            <Stack gap="sm">
+              <Text fw={700} size="lg">MISSION: Clean Water Initiative</Text>
+              <Text fw={600}>Driving Question:</Text>
+              <Text fs="italic">"What is the impact of local land use on our watershed's water quality, and what should the city environmental board recommend to protect it?"</Text>
+              <Text fw={600}>Your Mission:</Text>
+              <Text>The City of Riverside is updating its environmental protection plan. The environmental board needs current data on how different land uses affect water quality in the Cedar Creek watershed. Your team has been selected as a youth environmental research team. You will collect water quality data from three sites, analyze the relationship between land use and water health, and present your findings and recommendations to the environmental board.</Text>
+            </Stack>
+          </Card>
+        </Accordion.Panel>
+      </Accordion.Item>
+      <Accordion.Item value="research">
+        <Accordion.Control>Page 6: Research Guide</Accordion.Control>
+        <Accordion.Panel>
+          <Card withBorder p="md">
+            <Stack gap="sm">
+              <Text fw={700}>Research Questions</Text>
+              <Text>Your investigation should answer these questions:</Text>
+              <List type="ordered">
+                <List.Item>What are the main water quality indicators and what do they measure?</List.Item>
+                <List.Item>How do residential, agricultural, and industrial land uses typically affect water quality?</List.Item>
+                <List.Item>What are the current water quality standards for our region?</List.Item>
+                <List.Item>What mitigation strategies have other communities used successfully?</List.Item>
+              </List>
+              <Text fw={700} mt="sm">Source Requirements</Text>
+              <Text>Find at least 5 sources: 2 scientific articles, 1 government data source, 1 local news article, 1 community organization report.</Text>
+            </Stack>
+          </Card>
+        </Accordion.Panel>
+      </Accordion.Item>
+      <Accordion.Item value="data">
+        <Accordion.Control>Pages 9-10: Data Collection Template</Accordion.Control>
+        <Accordion.Panel>
+          <Card withBorder p="md">
+            <Table striped withTableBorder withColumnBorders>
+              <Table.Thead>
+                <Table.Tr>
+                  <Table.Th>Site</Table.Th>
+                  <Table.Th>Land Use</Table.Th>
+                  <Table.Th>pH</Table.Th>
+                  <Table.Th>Dissolved O₂ (mg/L)</Table.Th>
+                  <Table.Th>Turbidity (NTU)</Table.Th>
+                  <Table.Th>Nitrate (mg/L)</Table.Th>
+                </Table.Tr>
+              </Table.Thead>
+              <Table.Tbody>
+                <Table.Tr>
+                  <Table.Td>Site A (example)</Table.Td>
+                  <Table.Td>Residential</Table.Td>
+                  <Table.Td>7.2</Table.Td>
+                  <Table.Td>8.1</Table.Td>
+                  <Table.Td>12</Table.Td>
+                  <Table.Td>3.4</Table.Td>
+                </Table.Tr>
+                <Table.Tr>
+                  <Table.Td>Site B</Table.Td>
+                  <Table.Td></Table.Td>
+                  <Table.Td></Table.Td>
+                  <Table.Td></Table.Td>
+                  <Table.Td></Table.Td>
+                  <Table.Td></Table.Td>
+                </Table.Tr>
+                <Table.Tr>
+                  <Table.Td>Site C</Table.Td>
+                  <Table.Td></Table.Td>
+                  <Table.Td></Table.Td>
+                  <Table.Td></Table.Td>
+                  <Table.Td></Table.Td>
+                  <Table.Td></Table.Td>
+                </Table.Tr>
+              </Table.Tbody>
+            </Table>
+          </Card>
+        </Accordion.Panel>
+      </Accordion.Item>
+    </Accordion>
+  </Tabs.Panel>
+</Tabs>
+
+## Standards Addressed
+
+- NGSS MS-LS2-1: Analyze and interpret data for effects of resource availability on organisms
+- NGSS MS-LS2-4: Construct an argument about ecosystem disruption
+- NGSS MS-ESS3-3: Apply scientific principles to design monitoring methods
+- CCSS.ELA W.7.1: Write arguments to support claims with evidence
+- CCSS.ELA SL.7.4: Present claims and findings with relevant evidence

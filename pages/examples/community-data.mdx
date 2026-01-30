@@ -1,0 +1,274 @@
+import { ExampleCard } from '../../components/ExampleCard'
+import { Callout } from '../../components/Callout'
+import { Accordion, Table, Card, Text, Stack, List, Badge, Group, Tabs } from '@mantine/core'
+
+# Community Data Analysis
+
+<ExampleCard
+  title="Numbers That Matter"
+  subject="Mathematics"
+  gradeLevel="Grade 8"
+  drivingQuestion="Based on demographic and economic data, what recommendations can we make to the city planning commission about where to invest in new youth services?"
+>
+  <Group gap="xs" mt="xs">
+    <Badge color="gray" variant="light">3 Weeks</Badge>
+    <Badge color="gray" variant="light">4 Student Roles</Badge>
+    <Badge color="gray" variant="light">Commission Presentation</Badge>
+  </Group>
+</ExampleCard>
+
+## Mission Overview
+
+Students analyze real census, economic, and demographic data for their city or neighborhood to identify where youth services are most needed. They use statistical analysis, data visualization, and spatial reasoning to build evidence-based recommendations for a city planning commission about where to invest in new youth programs and facilities.
+
+<Tabs defaultValue="goals" my="md">
+  <Tabs.List>
+    <Tabs.Tab value="goals">Learning Goals</Tabs.Tab>
+    <Tabs.Tab value="roles">Student Roles</Tabs.Tab>
+    <Tabs.Tab value="assessment">Assessment</Tabs.Tab>
+    <Tabs.Tab value="workbook">Workbook Preview</Tabs.Tab>
+  </Tabs.List>
+
+  <Tabs.Panel value="goals" pt="md">
+    ### Four-Tier Learning Goals
+
+    **Tier 1: Content Knowledge**
+    - Students will define and calculate measures of central tendency (mean, median, mode) and spread (range, interquartile range).
+    - Students will explain how to read and interpret scatter plots, box plots, and histograms.
+    - Students will describe how demographic data is collected and organized by the U.S. Census Bureau.
+
+    **Tier 2: Skills and Processes**
+    - Students will calculate statistical measures for real-world data sets.
+    - Students will construct appropriate data visualizations for different types of data.
+    - Students will use proportional reasoning to compare data across neighborhoods of different sizes.
+
+    **Tier 3: Critical Thinking**
+    - Students will analyze patterns in demographic and economic data to identify areas of need.
+    - Students will evaluate the strengths and limitations of different data sources and statistical measures.
+    - Students will construct a data-driven argument supporting a specific investment recommendation.
+
+    **Tier 4: Communication and Collaboration**
+    - Students will present statistical findings using appropriate data visualizations and plain-language explanations.
+    - Students will write a recommendation report that translates data analysis into actionable policy suggestions.
+    - Students will respond to questions from the commission panel with evidence-based answers.
+  </Tabs.Panel>
+
+  <Tabs.Panel value="roles" pt="md">
+    ### Student Roles
+
+    <Accordion variant="separated">
+      <Accordion.Item value="statistician">
+        <Accordion.Control>
+          <Group>
+            <Badge color="blue">Lead Statistician</Badge>
+            <Text size="sm">Data Scientist</Text>
+          </Group>
+        </Accordion.Control>
+        <Accordion.Panel>
+          <Stack gap="xs">
+            <Text fw={600}>Purpose:</Text>
+            <Text>Performs all statistical calculations and ensures mathematical accuracy.</Text>
+            <Text fw={600}>Key Responsibilities:</Text>
+            <List>
+              <List.Item>Calculate measures of central tendency and spread for each data set</List.Item>
+              <List.Item>Identify statistical patterns and outliers</List.Item>
+              <List.Item>Perform comparative analysis across neighborhoods</List.Item>
+              <List.Item>Write the statistical methodology section of the report</List.Item>
+            </List>
+            <Text fw={600}>Deliverables:</Text>
+            <Text>Calculation worksheets, statistical summary table, methodology write-up</Text>
+          </Stack>
+        </Accordion.Panel>
+      </Accordion.Item>
+
+      <Accordion.Item value="visualizer">
+        <Accordion.Control>
+          <Group>
+            <Badge color="green">Data Visualizer</Badge>
+            <Text size="sm">Graphic Analyst</Text>
+          </Group>
+        </Accordion.Control>
+        <Accordion.Panel>
+          <Stack gap="xs">
+            <Text fw={600}>Purpose:</Text>
+            <Text>Creates all charts, graphs, and visual representations of the team's data.</Text>
+            <Text fw={600}>Key Responsibilities:</Text>
+            <List>
+              <List.Item>Select appropriate chart types for different data</List.Item>
+              <List.Item>Create publication-quality data visualizations</List.Item>
+              <List.Item>Design the visual elements of the final presentation</List.Item>
+              <List.Item>Ensure all visuals are accurately labeled and scaled</List.Item>
+            </List>
+            <Text fw={600}>Deliverables:</Text>
+            <Text>5+ data visualizations, presentation graphics, neighborhood comparison maps</Text>
+          </Stack>
+        </Accordion.Panel>
+      </Accordion.Item>
+
+      <Accordion.Item value="policy">
+        <Accordion.Control>
+          <Group>
+            <Badge color="orange">Policy Researcher</Badge>
+            <Text size="sm">Urban Planner</Text>
+          </Group>
+        </Accordion.Control>
+        <Accordion.Panel>
+          <Stack gap="xs">
+            <Text fw={600}>Purpose:</Text>
+            <Text>Connects statistical findings to real-world policy implications and recommendations.</Text>
+            <Text fw={600}>Key Responsibilities:</Text>
+            <List>
+              <List.Item>Research existing youth services and their locations</List.Item>
+              <List.Item>Identify gaps between service locations and areas of need</List.Item>
+              <List.Item>Research what types of youth services are most effective</List.Item>
+              <List.Item>Write the recommendations section of the report</List.Item>
+            </List>
+            <Text fw={600}>Deliverables:</Text>
+            <Text>Service gap analysis, best practices research summary, recommendation write-up</Text>
+          </Stack>
+        </Accordion.Panel>
+      </Accordion.Item>
+
+      <Accordion.Item value="presenter">
+        <Accordion.Control>
+          <Group>
+            <Badge color="violet">Presentation Lead</Badge>
+            <Text size="sm">Public Affairs Specialist</Text>
+          </Group>
+        </Accordion.Control>
+        <Accordion.Panel>
+          <Stack gap="xs">
+            <Text fw={600}>Purpose:</Text>
+            <Text>Designs the final report and presentation for the planning commission audience.</Text>
+            <Text fw={600}>Key Responsibilities:</Text>
+            <List>
+              <List.Item>Write the executive summary and introduction</List.Item>
+              <List.Item>Organize the final report structure</List.Item>
+              <List.Item>Design the presentation slide deck</List.Item>
+              <List.Item>Coordinate speaking roles and rehearsals</List.Item>
+            </List>
+            <Text fw={600}>Deliverables:</Text>
+            <Text>Executive summary, final report layout, presentation slides, speaking script outline</Text>
+          </Stack>
+        </Accordion.Panel>
+      </Accordion.Item>
+    </Accordion>
+  </Tabs.Panel>
+
+  <Tabs.Panel value="assessment" pt="md">
+    ### Assessment Strategy
+
+    **Checkpoints:**
+
+    | Checkpoint | Timing | Deliverable | Weight |
+    |-----------|--------|-------------|--------|
+    | Data Inventory | End of Day 3 | Organized data sets with source citations | 10% |
+    | Statistical Analysis | End of Week 1 | Completed calculations + initial visualizations | 20% |
+    | Pattern Identification | Mid Week 2 | Written analysis of patterns + gap identification | 15% |
+    | Draft Report | End of Week 2 | Full draft for peer review | 15% |
+    | Final Presentation | End of Week 3 | Commission presentation + final report | 40% |
+
+    **Rubric Criteria (Final Product):**
+
+    | Criterion | Exceeds | Meets | Approaching | Beginning |
+    |-----------|---------|-------|-------------|-----------|
+    | Statistical Accuracy | All calculations correct with appropriate measures selected for each data type | Calculations correct for most analyses | Some calculation errors or inappropriate measure selection | Significant errors or missing calculations |
+    | Data Visualization | Professional-quality visuals that reveal patterns clearly, with appropriate chart types | Clear, accurate visualizations with proper labels | Readable visuals but some issues with type selection or labeling | Unclear, mislabeled, or missing visualizations |
+    | Argument Quality | Nuanced recommendations addressing multiple factors with cost-benefit consideration | Clear recommendations supported by statistical evidence | Recommendations present but weakly connected to data | No data-driven recommendations |
+    | Communication | Engaging presentation with confident Q&A responses, accessible to non-technical audience | Clear presentation appropriate for the commission audience | Understandable but overly technical or disorganized | Unclear presentation with significant gaps |
+    | Mathematical Reasoning | Demonstrates deep understanding of when and why to use different statistical approaches | Correctly applies statistical concepts to the analysis | Shows some understanding but with gaps in application | Does not demonstrate statistical reasoning |
+  </Tabs.Panel>
+
+  <Tabs.Panel value="workbook" pt="md">
+    ### Workbook Preview
+
+    <Accordion variant="contained">
+      <Accordion.Item value="brief">
+        <Accordion.Control>Page 2: Mission Brief</Accordion.Control>
+        <Accordion.Panel>
+          <Card withBorder p="md">
+            <Stack gap="sm">
+              <Text fw={700} size="lg">MISSION: Numbers That Matter</Text>
+              <Text fw={600}>Driving Question:</Text>
+              <Text fs="italic">"Based on demographic and economic data, what recommendations can we make to the city planning commission about where to invest in new youth services?"</Text>
+              <Text fw={600}>Your Mission:</Text>
+              <Text>The City Planning Commission is deciding where to invest $2 million in new youth services over the next five years. They need data-driven recommendations about which neighborhoods have the greatest need and what types of services would have the most impact. Your team will analyze real census and economic data, identify patterns and gaps in current services, and present your recommendations at a public commission hearing.</Text>
+            </Stack>
+          </Card>
+        </Accordion.Panel>
+      </Accordion.Item>
+      <Accordion.Item value="data-collection">
+        <Accordion.Control>Pages 9-10: Data Collection</Accordion.Control>
+        <Accordion.Panel>
+          <Card withBorder p="md">
+            <Stack gap="sm">
+              <Text fw={700}>Neighborhood Data Summary</Text>
+              <Text>Record data for each neighborhood in your analysis area:</Text>
+              <Table striped withTableBorder withColumnBorders>
+                <Table.Thead>
+                  <Table.Tr>
+                    <Table.Th>Neighborhood</Table.Th>
+                    <Table.Th>Youth Pop. (under 18)</Table.Th>
+                    <Table.Th>Median Income</Table.Th>
+                    <Table.Th>Existing Youth Services</Table.Th>
+                    <Table.Th>Youth-to-Service Ratio</Table.Th>
+                  </Table.Tr>
+                </Table.Thead>
+                <Table.Tbody>
+                  <Table.Tr>
+                    <Table.Td>Downtown (example)</Table.Td>
+                    <Table.Td>2,450</Table.Td>
+                    <Table.Td>$38,000</Table.Td>
+                    <Table.Td>3</Table.Td>
+                    <Table.Td>817:1</Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td></Table.Td>
+                    <Table.Td></Table.Td>
+                    <Table.Td></Table.Td>
+                    <Table.Td></Table.Td>
+                    <Table.Td></Table.Td>
+                  </Table.Tr>
+                  <Table.Tr>
+                    <Table.Td></Table.Td>
+                    <Table.Td></Table.Td>
+                    <Table.Td></Table.Td>
+                    <Table.Td></Table.Td>
+                    <Table.Td></Table.Td>
+                  </Table.Tr>
+                </Table.Tbody>
+              </Table>
+              <Text fw={700} mt="sm">Statistical Summary</Text>
+              <Text>Calculate for each column: Mean ___ Median ___ Range ___ IQR ___</Text>
+            </Stack>
+          </Card>
+        </Accordion.Panel>
+      </Accordion.Item>
+      <Accordion.Item value="analysis">
+        <Accordion.Control>Pages 11-12: Analysis Framework</Accordion.Control>
+        <Accordion.Panel>
+          <Card withBorder p="md">
+            <Stack gap="sm">
+              <Text fw={700}>Pattern Analysis Questions</Text>
+              <List type="ordered">
+                <List.Item>Which neighborhoods have the highest youth-to-service ratios? What do these neighborhoods have in common?</List.Item>
+                <List.Item>Is there a relationship between median income and number of existing youth services? Create a scatter plot and describe the trend.</List.Item>
+                <List.Item>Which neighborhoods are statistical outliers? What might explain this?</List.Item>
+                <List.Item>If you could only invest in two neighborhoods, which would you choose and why? Support your answer with specific data points.</List.Item>
+              </List>
+            </Stack>
+          </Card>
+        </Accordion.Panel>
+      </Accordion.Item>
+    </Accordion>
+  </Tabs.Panel>
+</Tabs>
+
+## Standards Addressed
+
+- CCSS.Math 8.SP.1: Construct and interpret scatter plots for bivariate data
+- CCSS.Math 8.SP.2: Know that straight lines model relationships between two quantities
+- CCSS.Math 8.SP.4: Understand patterns of association in bivariate data
+- CCSS.Math 7.SP.1-4: Use sampling, data distributions, and comparative inferences
+- CCSS.ELA W.8.1: Write arguments with clear reasoning and relevant evidence
+- CCSS.ELA SL.8.4: Present claims and findings with relevant evidence
